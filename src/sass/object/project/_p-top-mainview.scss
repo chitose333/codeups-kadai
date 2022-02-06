@@ -1,0 +1,102 @@
+@use 'global' as *;
+
+.p-top-mainview {
+  height: 100vh;
+  position: relative;
+  margin-bottom: rem(22);
+
+  @include mq('md'){
+    margin-bottom: rem(33);
+  }
+}
+
+.p-top-mainview > .wrap{
+  height: inherit;
+  padding: 0;
+}
+@keyframes zoomUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.15);
+  }
+}
+
+.p-top-mainview .swiper-container ::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #111;//黒フィルター
+  opacity: 0.15;
+  z-index: 1;
+}
+
+.p-top-mainview .swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img{
+  animation: zoomUp 10s linear 0s 1 normal both;
+}
+
+.p-top-mainview .slide-img img{
+  display: block;
+  height: 100vh;
+}
+
+
+.p-top-mainview__titlebox {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: $white;
+  text-align: center;
+  z-index: 5;
+  width: 100%;
+
+  @include mq('md'){
+    top: 44%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.p-top-mainview__title {
+  font-size: rem(27);//28だと１行に入らない
+  line-height: 1;
+  display: block;
+  width: 100%;
+  margin-bottom: rem(27);
+  letter-spacing: 0.03em;
+  margin-top: rem(1);
+  letter-spacing: 0.03em;
+
+  @include mq('md'){
+    font-size: rem(50);
+    font-weight: $bold;
+    margin-bottom: rem(22);
+    margin-top: 4px;
+    letter-spacing: 0.01em;
+  }
+}
+
+.p-top-mainview__subtitle {
+  font-size: rem(20);
+  line-height: 1;
+  font-weight: 700;
+
+  @include mq('md'){
+    font-size: rem(25);
+    font-weight: $bold;
+    margin-top: rem(25);
+    letter-spacing: 0.02em;
+  }
+}

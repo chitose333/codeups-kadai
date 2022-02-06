@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <!-- meta情報 -->
+  <title>CodeUps</title>
+  <meta name="description" content="descriptionです" />
+  <meta name="keywords" content="keywordsいれるよ" />
+  <!-- ogp -->
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:site_name" content="" />
+  <meta property="og:description" content="" />
+  <!-- ファビコン -->
+  <!-- <link rel="”icon”" href="./assets/images/common/" /> -->
+  <!--google-fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <!--swiper-->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"> -->
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+  <!-- JavaScript -->
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./assets/js/script.js"></script> -->
+</head>
+<body>
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo">
+        <a class="logo__link" href="#">
+          <img src="./assets/images/common/CodeUps.png" alt="">
+        </a>
+      </div>
+      <a id="MenuButton" href="#" class="sp-header__drawer hamburger js-drawer-open">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      <nav class="header__drawer drawer-menu">
+        <ul class="drawer-menu__items">
+          <li class="drawer-menu__item"><a href="#">トップ</a></li>
+          <li class="drawer-menu__item"><a href="#news">お知らせ</a></li>
+          <li class="drawer-menu__item"><a href="#content">事業内容</a></li>
+          <li class="drawer-menu__item"><a href="#works">制作実績</a></li>
+          <li class="drawer-menu__item"><a href="#overview">企業概要</a></li>
+          <li class="drawer-menu__item"><a href="#blog">ブログ</a></li>
+          <li class="drawer-menu__item"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      <nav class="header__nav pc-nav">
+        <ul class="pc-nav__items">
+          <li class="pc-nav__item"><a href="#news">お知らせ</a></li>
+          <li class="pc-nav__item"><a href="#content">事業内容</a></li>
+          <li class="pc-nav__item"><a href="#works">制作実績</a></li>
+          <li class="pc-nav__item"><a href="#overview">企業概要</a></li>
+          <li class="pc-nav__item"><a href="#blog">ブログ</a></li>
+          <li class="pc-nav__item pc-nav__item--white"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div><!--header__inner-->
+  </header>
+  <!-- /.header -->
+  <div class="js-drawer-menu"></div>
+  <section class="single-works">
+    <div class="l-inner">
+      <div class="breadcrumb">
+        <p>トップ ＞ 制作実績 ＞ 制作実績詳細</p>
+      </div><!--/.breadcrumb-->
+      <div class="single-inner single-works__inner">
+        <div class="single-works__header single-header">
+          <h1 class="single-header__title">〇〇株式会社様 制作実績</h1>
+          <p class="single-header__subtitle">2020/06/13<span>カテゴリ１</span></p>
+        </div>
+        <div class="gallery">                
+          <div class="swiper works-page-slider">
+            <!-- メイン -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__6.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__7.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__8.jpg" alt=""></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <!-- サムネイル -->
+          <div class="swiper works-page-slider-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__4.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__5.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__6.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__7.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="/assets/images/single-works/works-detail__8.jpg" alt=""></div>    
+            </div>
+          </div>
+        </div>
+        <div class="single-works__points point-items">
+          <div class="point-item single-works__point">
+            <p class="point-item__title">制作のポイント</p>
+            <p class="point-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <!-- /.point-item -->
+          <div class="point-item single-works__point">
+            <p class="point-item__title">デザインのポイント</p>
+            <p class="point-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <!-- /.point-item -->
+          <div class="point-item single-works__point">
+            <p class="point-item__title">その他</p>
+            <p class="point-item__text">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+          <!-- /.point-item -->
+        </div>
+        <!-- /.single-works__points -->
+      </div>
+      <!-- /.works__inner -->
+      <div class="pagination single-pagination">
+        <div class="pagination__container">
+          <div class="pagination__prev prev">
+            <a href="" class="prev__btn">PREV</a>
+          </div>
+          <div class="pagination__btn page-btn is-now">
+            <a href="">一覧</a>
+          </div>
+          <!-- <div class="pagination__btn page-btn">
+            <a href="">2</a>
+          </div>
+          <div class="pagination__btn page-btn">
+            <a href="">3</a>
+          </div>
+          <div class="pagination__btn page-btn">
+            <a href="">4</a>
+          </div> -->
+          <div class="pagination__next next">
+            <a href="" class="prev__btn">NEXT</a>
+          </div>
+        </div>
+      </div><!--/.pagination-->
+      <section class="related">
+        <div class="related__title">関連記事</div>
+        <!-- /.related__title -->
+        <ul class="related__body">
+          <li class="related__item card">
+            <a href="#" class="card__link">
+              <div class="card__header"><img src="./assets/images/common/related1.jpg" alt=""></div>
+              <div class="card__body">
+                <p class="card__title">タイトルが入ります。タイトルが入ります。</p>
+                <!-- <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
+                <div class="card__footer">
+                  <span class="card__genre">カテゴリ</span>
+                  <p class="card__date"><time datetime="2020-07-20">2020.7.20</time></p>
+                </div>
+              </div>
+            </a>
+          </li><!--/.card__item-->
+          <li class="related__item card">
+            <a href="#" class="card__link">
+              <div class="card__header"><img src="./assets/images/common/related2.jpg" alt=""></div>
+              <div class="card__body">
+                <p class="card__title">タイトルが入ります。タイトルが入ります。</p>
+                <!-- <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
+                <div class="card__footer">
+                  <span class="card__genre">カテゴリ</span>
+                  <p class="card__date"><time datetime="2020-07-20">2020.7.20</time></p>
+                </div>
+              </div>
+            </a>
+          </li><!--/.card__item-->
+          <li class="related__item card">
+            <a href="#" class="card__link">
+              <div class="card__header"><img src="./assets/images/common/related3.jpg" alt=""></div>
+              <div class="card__body">
+                <p class="card__title">タイトルが入ります。タイトルが入ります。</p>
+                <!-- <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
+                <div class="card__footer">
+                  <span class="card__genre">カテゴリ</span>
+                  <p class="card__date"><time datetime="2020-07-20">2020.7.20</time></p>
+                </div>
+              </div>
+            </a>
+          </li><!--/.card__item-->
+          <li class="related__item card">
+            <a href="#" class="card__link">
+              <div class="card__header"><img src="./assets/images/common/related4.jpg" alt=""></div>
+              <div class="card__body">
+                <p class="card__title">タイトルが入ります。タイトルが入ります。</p>
+                <!-- <p class="card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
+                <div class="card__footer">
+                  <span class="card__genre">カテゴリ</span>
+                  <p class="card__date"><time datetime="2020-07-20">2020.7.20</time></p>
+                </div>
+              </div>
+            </a>
+          </li><!--/.card__item-->
+        </ul>
+        <!-- /.related__body -->
+      </section>
+      <!-- /.related -->
+    </div><!--/.l-inner-->
+  </section>
+  <!-- /.single-works -->
+  <section id="contact" class="contact section">
+    <div class="contact__bg">
+      <div class="contact__container l-inner">
+        <div class="contact__header section__header">
+          <div class="section-title__container">
+            <h2 class="section-title">お問い合わせ</h2>
+            <span class="section-title__sub">Contact</span>
+          </div>
+        </div><!--/.contact__header-->
+        <div class="contact__body">
+          <p class="contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        </div>
+        <div class="contact__footer">
+          <div class="util-link__container">
+            <a class="util-link util-link--contact" href="#">お問い合わせへ</a>
+          </div>
+        </div>
+      </div><!--/.contact__container-->
+    </div><!--/.contact__bg-->
+  </section>
+  <!-- /.contact section -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__logo"><img src="./assets/images/common/CodeUps.png" alt=""></div>
+      <nav class="footer__menu">
+        <ul class="footer__menu__items">
+          <li class="footer__menu__item"><a href="#">トップ</a></li>
+          <li class="footer__menu__item"><a href="#">お知らせ</a></li>
+          <li class="footer__menu__item"><a href="#">事業内容</a></li>
+          <li class="footer__menu__item"><a href="#">企業概要</a></li>
+          <li class="footer__menu__item"><a href="#">ブログ</a></li>
+          <li class="footer__menu__item footer__menu__item--contact"><a href="#">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div><!--/.footer__container-->
+    <div class="footer__copyright">
+      <p> &copy; 2021 CodeUps Inc.</p>
+    </div>
+  </footer>
+  <div class="pagetop">
+    <!-- <a href="#" class="pagetop__link"> -->
+      <div class="pagetop__icon"></div>
+    <!-- </a> -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="./assets/js/script.js"></script>
+
+</body>
+</html>

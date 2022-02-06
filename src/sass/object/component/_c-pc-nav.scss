@@ -1,0 +1,67 @@
+@use 'global' as *;
+/*===========================================
+pc-nav
+===========================================*/
+.c-pc-nav {
+  height: inherit;
+  display: none;
+
+  @include mq('md'){
+    display: block;
+  }
+}
+
+.c-pc-nav__items {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.c-pc-nav__item {
+  height: inherit;
+}
+
+.c-pc-nav__item a {
+  height: inherit;
+  display: grid;
+  place-items: center;
+  padding: 0 rem(17.2);
+  font-size: rem(16);
+  position :relative;
+  transition: all 0.3s ease 0s;
+  letter-spacing: 0.05em;
+  color: $white;
+}
+
+.c-pc-nav__item a:hover::after {
+  @include mq('md'){
+    position: absolute;
+    content:"";
+    width: 80%;
+    height: 1px;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $yellow;
+    box-sizing: content-box;
+  }
+}
+.c-pc-nav__item.c-pc-nav__item--white {
+  margin-left: rem(16);
+}
+
+.c-pc-nav__item.c-pc-nav__item--white a {
+  background-color: $white;
+  padding: 0 rem(32);
+  color: $gray;
+  letter-spacing: 0.1em;
+}
+
+.c-pc-nav__item.c-pc-nav__item--white a:hover {
+  background-color: $gray;
+  color: $white;
+}
+
+.c-pc-nav__item.c-pc-nav__item--white a:hover::after {
+  display: none;
+}

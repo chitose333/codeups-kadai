@@ -1,0 +1,110 @@
+@use 'global' as *;
+
+/*===========================================
+sp-nav
+===========================================*/
+.l-header {
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: rem(50);
+  z-index: 8888;
+  transition: opacity 0.3s ease 0s;
+}
+
+.l-header.change-color {
+  background-color: rgba(17, 17, 17, 1);
+}
+
+.l-header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: inherit;
+  align-items: center;
+  width: inherit;
+  padding: 0 $padding-sp;
+
+  @include mq('md'){
+    padding-left: rem(32);
+    padding-right: 0;
+  }
+}
+
+.l-header__logo {
+  width: rem(70);
+  position: relative;
+  z-index: 9999;
+
+  @include mq('md'){
+    width: rem(95);
+  }
+}
+
+.l-header__logo a {
+  width: inherit;
+}
+
+.l-header__logo img {
+  width: inherit;
+
+  @include mq('md'){
+    padding-top: rem(2);
+  }
+}
+
+.hamburger {
+  z-index: 9999;
+
+  @include mq('md'){
+    display: none;
+  }
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+  height: rem(2);
+  width: rem(22);
+  background: #fff;
+  transition: transform 0.3s ease 0s;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+
+.hamburger span:nth-child(2) {
+  margin: rem(4) 0;
+}
+
+.hamburger span:nth-child(3) {
+  top: 0;
+}
+
+/*OPEN時の動き*/
+.hamburger.open span:nth-child(1) {
+  top: 5px;
+  transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+  transform: translateY(-50%);
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  top: -7px;
+  transform: rotate(-45deg);
+}
+
+/*is-OPEN時の中身*/
+@keyframes open{
+  from{
+      opacity: 0;
+  }
+  to{
+      opacity: 1;
+  }
+}

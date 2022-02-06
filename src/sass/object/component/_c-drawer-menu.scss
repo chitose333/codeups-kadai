@@ -1,0 +1,71 @@
+@use 'global' as *;
+.c-drawer-menu {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+
+  @include mq('md'){
+    display: none;
+  }
+}
+
+/*OPEN時の動き*/
+.c-drawer-menu.open {
+  display: block;
+  opacity: 1;
+  animation: open 1s ease 0s;
+  background-color: $black;
+}
+
+.c-drawer-menu__items {
+  margin: rem(209) auto;
+}
+
+.c-drawer-menu__item {
+  display: block;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: rem(32);
+  }
+}
+
+.c-drawer-menu__item a {
+  width: inherit;
+  height: inherit;
+  font-size: rem(16);
+  color: $white;
+  letter-spacing: 0.125em;
+}
+
+.js-drawer-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7777;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: none;
+  transition: all 1s ease 0s;
+
+  @include mq('md'){
+    display: none;
+  }
+}
+
+.js-drawer-menu__bg.open {
+  display: block;
+}
+
+html.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
