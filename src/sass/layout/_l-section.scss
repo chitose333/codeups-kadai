@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.l-section {
+  margin-bottom: rem(90);
+
+  @include mq('md'){
+    margin-bottom: rem(152);
+  }
+}

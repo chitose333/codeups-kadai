@@ -22,6 +22,4 @@
 - ルートフォントをvwで設定していることからPCサイズのレイアウトをタブレットで表示させることが出来ます（remで書いた場合のみ）。
 
 # codeups-kadai
-# codeups-kadai
-# codeups-kadai
 

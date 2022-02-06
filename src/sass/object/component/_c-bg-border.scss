@@ -1,0 +1,65 @@
+@use 'global' as *;
+
+/* 全体背景の斜め線 bg__border
+---------------------------------------------*/
+// .bg__border__position {
+//   width: 100%;
+//   padding: 0;
+//   margin: 0;
+//   position: relative;
+//   overflow: hidden;
+// }
+
+
+.c-bg-border {
+  position: absolute;
+  top: rem(1055);
+  left: 50%;
+  transform: translateX(-50%);
+  width: rem(1);
+  height: rem(736);
+  background-color: $pale-yellow;
+  transform: rotate(-29deg);
+  overflow: hidden;
+  z-index: -5;
+
+  @include mq('md'){
+    position: absolute;
+    top: rem(1000);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(1);
+    height: calc(1800 / 1280 * 100vw);//rem(1922
+    background-color: $pale-yellow;
+    transform: rotate(135deg);
+    z-index: -5;
+    overflow: hidden;
+  }
+}
+
+.c-bg-border2 {
+  position: absolute;
+  top: rem(1840);
+  left: 61%;
+  transform: translateX(-50%);
+  width: rem(1);
+  height: rem(1000);//78.125vw
+  background-color: $pale-yellow;
+  transform: rotate(15deg);
+  overflow: hidden;
+  z-index: -5;
+
+  @include mq('md'){
+    position: absolute;
+    top: rem(2512);
+    left: 44%;
+    transform: translateX(-50%);
+    width: rem(1);
+    height: calc(1922 / 1280 * 100vw);//rem(1922)
+    background-color: $pale-yellow;
+    transform: rotate(45deg);
+    z-index: -5;
+    overflow: hidden;
+
+  }
+}
