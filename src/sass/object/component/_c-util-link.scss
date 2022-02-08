@@ -1,0 +1,67 @@
+@use 'global' as *;
+
+.c-util-link {
+  width: 100%;
+  display: inline-block;
+  padding: rem(10);
+  font-size: rem(20);
+  box-sizing: border-box;
+  border: 1px solid $white;
+  background-color: $gray;
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+  letter-spacing: 0.125em;
+
+  @include mq('md'){
+    width: inherit;
+    font-size: rem(16);
+    line-height: 3.375;
+    padding: rem(2) rem(134);
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    transition: .3s;
+  }
+}
+
+.c-util-link--contact {
+
+  @include mq('md'){
+    font-size: rem(20);
+    letter-spacing: 0.1em;
+    padding: rem(15) rem(100);
+    line-height: 1.4;
+  }
+}
+
+.c-util-link:hover {
+  @include mq('md'){
+    color: $gray;
+  }
+}
+
+.c-util-link::before {
+  @include mq('md'){
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    background: #fff;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: transform .3s;
+    border: none;
+    opacity: 1;
+  }
+}
+
+.c-util-link:hover::before{
+  @include mq('md'){
+  transform-origin: left top;
+  transform: scale(1, 1);
+  }
+}

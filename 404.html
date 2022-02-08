@@ -16,13 +16,13 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <!-- <link rel="”icon”" href="./assets/images/common/" /> -->
+  <!-- <link rel="”icon”" href="./images/common/" /> -->
   <!--google-fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <!--swiper-->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.css"> -->
   <link
@@ -30,39 +30,39 @@
   href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="./assets/js/script.js"></script>
+  <script src="./js/script.js"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="header__inner">
-      <div class="header__logo">
-        <a class="logo__link" href="#">
-          <img src="./assets/images/common/CodeUps.png" alt="">
+  <header class="l-header">
+    <div class="l-header__inner">
+      <div class="l-header__logo">
+        <a class="l-logo__link" href="#">
+          <img src="./images/common/CodeUps.png" alt="">
         </a>
       </div>
-      <a id="MenuButton" href="#" class="sp-header__drawer hamburger js-drawer-open">
+      <a id="MenuButton" href="#" class="sp-header__drawer c-hamburger js-drawer-open">
         <span></span>
         <span></span>
         <span></span>
       </a>
-      <nav class="header__drawer drawer-menu">
-        <ul class="drawer-menu__items">
-          <li class="drawer-menu__item"><a href="#">トップ</a></li>
-          <li class="drawer-menu__item"><a href="#news">お知らせ</a></li>
-          <li class="drawer-menu__item"><a href="#content">事業内容</a></li>
-          <li class="drawer-menu__item"><a href="#works">制作実績</a></li>
-          <li class="drawer-menu__item"><a href="#overview">企業概要</a></li>
-          <li class="drawer-menu__item"><a href="#blog">ブログ</a></li>
-          <li class="drawer-menu__item"><a href="#contact">お問い合わせ</a></li>
+      <nav class="l-header__drawer c-drawer-menu">
+        <ul class="c-drawer-menu__items">
+          <li class="c-drawer-menu__item"><a href="#">トップ</a></li>
+          <li class="c-drawer-menu__item"><a href="#news">お知らせ</a></li>
+          <li class="c-drawer-menu__item"><a href="#content">事業内容</a></li>
+          <li class="c-drawer-menu__item"><a href="#works">制作実績</a></li>
+          <li class="c-drawer-menu__item"><a href="#overview">企業概要</a></li>
+          <li class="c-drawer-menu__item"><a href="#blog">ブログ</a></li>
+          <li class="c-drawer-menu__item"><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
-      <nav class="header__nav pc-nav">
-        <ul class="pc-nav__items">
-          <li class="pc-nav__item"><a href="#news">お知らせ</a></li>
-          <li class="pc-nav__item"><a href="#content">事業内容</a></li>
-          <li class="pc-nav__item"><a href="#works">制作実績</a></li>
-          <li class="pc-nav__item"><a href="#overview">企業概要</a></li>
-          <li class="pc-nav__item"><a href="#blog">ブログ</a></li>
+      <nav class="l-header__nav c-pc-nav">
+        <ul class="c-pc-nav__items">
+          <li class="c-pc-nav__item"><a href="#news">お知らせ</a></li>
+          <li class="c-pc-nav__item"><a href="#content">事業内容</a></li>
+          <li class="c-pc-nav__item"><a href="#works">制作実績</a></li>
+          <li class="c-pc-nav__item"><a href="#overview">企業概要</a></li>
+          <li class="c-pc-nav__item"><a href="#blog">ブログ</a></li>
           <li class="pc-nav__item pc-nav__item--white"><a href="#contact">お問い合わせ</a></li>
         </ul>
       </nav>
@@ -70,36 +70,36 @@
   </header>
   <!-- /.header -->
   <div class="js-drawer-menu"></div>
-  <section class="section-404">
+  <section class="p-section-404">
     <div class="l-inner">
-      <h1 class="section-404__title">404 Not Found</h1>
-      <p class="section-404__text message">お探しのページは<br class="u-mobile">見つかりませんでした。</p>
-      <a href="#" class="return-btn">TOPへ</a>
+      <h1 class="p-section-404__title">404 Not Found</h1>
+      <p class="p-section-404__text c-message">お探しのページは<br class="u-mobile">見つかりませんでした。</p>
+      <a href="#" class="c-return-btn">TOPへ</a>
     </div>
     <!-- /.l-inner -->
   </section>
-  <!-- /.thanks -->
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__logo"><img src="./assets/images/common/CodeUps.png" alt=""></div>
-      <nav class="footer__menu">
-        <ul class="footer__menu__items">
-          <li class="footer__menu__item"><a href="#">トップ</a></li>
-          <li class="footer__menu__item"><a href="#">お知らせ</a></li>
-          <li class="footer__menu__item"><a href="#">事業内容</a></li>
-          <li class="footer__menu__item"><a href="#">企業概要</a></li>
-          <li class="footer__menu__item"><a href="#">ブログ</a></li>
-          <li class="footer__menu__item footer__menu__item--contact"><a href="#">お問い合わせ</a></li>
+  <!-- /.section-404 -->
+  <footer class="p-footer">
+    <div class="p-footer__container">
+      <div class="p-footer__logo"><img src="./images/common/CodeUps.png" alt=""></div>
+      <nav class="p-footer__menu">
+        <ul class="p-footer__menu__items">
+          <li class="p-footer__menu__item"><a href="#">トップ</a></li>
+          <li class="p-footer__menu__item"><a href="#">お知らせ</a></li>
+          <li class="p-footer__menu__item"><a href="#">事業内容</a></li>
+          <li class="p-footer__menu__item"><a href="#">企業概要</a></li>
+          <li class="p-footer__menu__item"><a href="#">ブログ</a></li>
+          <li class="p-footer__menu__item p-footer__menu__item--p-top-contact"><a href="#">お問い合わせ</a></li>
         </ul>
       </nav>
-    </div><!--/.footer__container-->
-    <div class="footer__copyright">
+    </div><!--/.p-footer__container-->
+    <div class="p-footer__copyright">
       <p> &copy; 2021 CodeUps Inc.</p>
     </div>
   </footer>
-  <div class="pagetop">
+  <div class="c-pagetop">
     <!-- <a href="#" class="pagetop__link"> -->
-      <div class="pagetop__icon"></div>
+      <div class="c-pagetop__icon"></div>
     <!-- </a> -->
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.js"></script>

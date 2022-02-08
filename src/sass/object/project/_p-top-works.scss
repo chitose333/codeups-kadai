@@ -1,0 +1,88 @@
+@use 'global' as *;
+
+.p-top-works__bg {
+  background-color: $gray;
+
+  @include mq('md'){
+    background: linear-gradient(90deg, $black 0%, $black 30%, $gray 30%, $gray 100%);
+    // padding: rem(80) 0;
+  }
+}
+
+.p-top-works__container {
+  @include mq('md'){
+    // padding-bottom: rem(36);
+    display: flex;
+    // align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-pc;
+    padding-left: $padding-pc;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+}
+
+.p-top-works__img {
+
+  @include mq('md'){
+    width: 50%;
+    background-color: transparent;
+  }
+}
+
+//worksのswiperカスタマイズ
+// .works__img .swiper-container {
+//   padding-bottom: rem(30);
+
+//   @include mq('md'){
+//     padding-bottom: rem(40);
+//   }
+// }
+
+.p-top-works__img .swiper-pagination-bullet {
+  background-color: #c4c4c4;
+  margin-left: rem(5);
+  margin-right: rem(5);
+}
+
+.p-top-works__img .swiper-pagination-bullet-active {
+  background-color: $pale-yellow;
+}
+
+.p-top-works__img .swiper-pagination {
+  position : static;
+  margin-top: rem(12);
+}
+
+.p-top-works__body {
+  padding: 0 $padding-sp;
+  padding-top: 0;
+  margin-top: -6px;
+
+  @include mq('md'){
+    width: 50%;
+    padding: 0;
+    padding-left: rem(40);
+    background-color: transparent;
+    // margin-top: rem(-61);
+  }
+}
+
+.p-top-works__body {
+  padding: 0 $padding-sp;
+  padding-top: 0;
+  margin-top: -6px;
+
+  @include mq('md'){
+    width: 50%;
+    padding: 0;
+    padding-left: rem(40);
+    background-color: transparent;
+    // margin-top: rem(-61);
+  }
+
+}

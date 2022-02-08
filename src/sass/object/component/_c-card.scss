@@ -1,0 +1,105 @@
+@use 'global' as *;
+
+.c-card__link {
+  width: 100%;
+}
+
+.c-card__body {
+  background-color: $white;
+  color :$gray;
+  padding: rem(2) rem(22) rem(17);
+  transition: all 0.3s ease 0s;
+}
+
+.c-card__link:hover .c-card__body {
+  background-color: $gray;
+  color: $white;
+}
+
+.c-card__link:hover .c-card__genre {
+  color: $gray;
+}
+
+.c-card__title {
+  font-size: rem(18);
+  line-height: 2;
+  line-height: 1.9;
+  letter-spacing: 0.05em;
+
+  @include mq('md'){
+    letter-spacing: 0.06em;
+  }
+}
+
+.c-card__text {
+  font-size: rem(16);
+  line-height: 1.6;
+  letter-spacing: -0.07em;
+  margin-top: 6px;
+
+  @include mq('md'){
+    line-height: 1.7;
+    letter-spacing: -0.06em;
+    margin-top: rem(3);
+    margin-top: 0;
+  }
+}
+
+.c-card__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: rem(5);
+  line-height: 1.2;
+
+  @include mq('md'){
+    margin-top: rem(8);
+  }
+}
+
+.c-card__genre {
+  background-color: $yellow;
+  padding: rem(4);
+  display: inline-block;
+  letter-spacing: -0.05em;
+}
+
+.c-card__genre a {
+  color: $gray;
+  font-size: rem(14);
+  line-height: 2;
+}
+
+.c-card__date {
+  font-size: rem(14);
+}
+
+//最初の一個にnew表示
+.c-card:first-child {
+  position: relative;
+}
+
+.c-card > .c-card__is-new {
+  margin-left: rem(4);
+  position: absolute;
+  top: rem(-18);
+  left: rem(-20);
+  z-index: 2;
+
+  @include mq('md'){
+    top: rem(-14);
+  }
+}
+
+.c-card__is-new span {
+  display: inline-block;
+  width: rem(60);
+  height: rem(60);
+  background-color: $beige;
+  border-radius: 50%;
+  line-height: rem(60);
+  text-align: center;
+  color: $light-gray;
+  letter-spacing: 0.12em;
+}

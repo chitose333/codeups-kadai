@@ -49,14 +49,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   //headerの背景色変化
-  $( window ).on( 'scroll', function() {
+  $( window ).on( 'scroll', function () {
     // let mainview = $('mainview').innerHeight();
     if ( jQuery('.p-top-mainview').height() < jQuery( this ).scrollTop() ) {
       jQuery( '.l-header' ).addClass( 'change-color' );
-    } else { jQuery( '.l-header' ).removeClass( 'change-color' );
+    } else {
+      jQuery( '.l-header' ).removeClass( 'change-color' );
     }
   });
-
 
   //mainviewのswiper
   let swipeOption = {

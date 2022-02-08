@@ -1,0 +1,14 @@
+@use 'global' as *;
+
+.c-message {
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  text-align: center;
+  font-weight: $regular;
+
+  @include mq('md'){
+    font-size: rem(30);
+    line-height: 1.67;
+    letter-spacing: 0.06em;
+  }
+}

@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.c-cards {
+  @include mq('md'){
+  display: flex;
+  flex-wrap: wrap;
+  }
+}
+
+.c-cards__item {
+  width: 100%;
+
+  @include mq('md'){
+    width: calc(33.3% - 25px * 2 /3);//rem(25)での書き方
+  }
+}
+
+.c-cards__item:not(:nth-child(3n + 1)){
+  @include mq('md'){
+  margin-left: rem(25);
+  }
+}
+
+.c-cards__item:nth-child(n + 4){
+  @include mq('md'){
+  margin-top: rem(25);
+  }
+}

@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.p-top-blog {
+  @include mq('md'){
+    margin-bottom: rem(148);
+  }
+}
+
+.p-top-blog__header {
+  margin-bottom: rem(68);
+
+  @include mq('md'){
+    margin-bottom: 0;
+  }
+}
+
+.p-top-blog__header>.c-section-title__container {
+  z-index: -1;
+}
+
+.p-top-blog__footer {
+  @include mq('md'){
+    text-align: center;
+    margin-top: rem(56);
+  }
+}

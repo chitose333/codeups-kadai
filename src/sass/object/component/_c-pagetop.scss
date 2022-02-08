@@ -1,0 +1,52 @@
+@use 'global' as *;
+
+.c-pagetop {
+  width: rem(45);
+  height: rem(45);
+  position: fixed;
+  right: rem(20); //rightで指定したい
+  bottom: rem(40);
+  z-index: 8888;
+  // transition: all 0.3s ease 0s;
+  // position: relative;
+  background-color: $white;
+  transition: all 0.3s ease 0s;
+
+
+  @include mq('md'){
+    bottom: rem(32);
+    right: rem(32);
+  }
+}
+
+// .c-pagetop__link {
+//   position: relative;
+//   width: inherit;
+//   height: inherit;
+//   background-color: $white;
+//   transition: all 0.3s ease 0s;
+// }
+
+.c-pagetop__icon {
+  position: absolute;
+  top: 40%;//ここの数字の出し方
+  left: 23%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  border-top: solid 2px $gray;
+  border-left: solid 2px $gray;
+  width: rem(24);
+  height: rem(24);
+  transform: rotate(45deg)
+}
+
+.c-pagetop:hover {
+  @include mq('md'){
+    background-color: $gray;
+  }
+}
+
+.c-pagetop:hover .c-pagetop__icon {
+  border-top: solid 2px $white;
+  border-left: solid 2px $white;
+}

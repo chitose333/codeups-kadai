@@ -1,0 +1,49 @@
+@use 'global' as *;
+
+.p-top-contact {
+  margin-top: rem(120);
+  margin-bottom: rem(54);
+
+  @include mq('md'){
+    margin-bottom: 0;
+  }
+}
+
+.p-top-contact__header {
+  margin-bottom: rem(16);
+}
+
+.p-top-contact__bg {
+  background-color: $light-gray;
+  color: $white;
+}
+
+.p-top-contact__container {
+  padding-top: rem(40);
+  padding-bottom: rem(64);
+
+  @include mq('md'){
+    padding-top: rem(131);
+    padding-bottom: rem(150);
+  }
+}
+
+.p-top-contact__body {
+  @include mq('md'){
+    margin-top: rem(19);
+    text-align: center;
+  }
+}
+
+.p-top-contact__text {
+  letter-spacing: 0.13em;
+}
+
+.p-top-contact__footer {
+  margin-top: rem(43);
+
+  @include mq('md'){
+    margin-top: rem(60);
+    text-align: center;
+  }
+}

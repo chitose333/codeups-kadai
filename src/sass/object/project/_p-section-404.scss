@@ -1,0 +1,26 @@
+@use 'global' as *;
+
+.p-section-404 {
+  margin: rem(80) auto rem(120);
+
+  @include mq('md'){
+    margin: rem(150) auto;
+  }
+}
+
+.p-section-404__title {
+  text-align: center;
+  font-size: rem(40);
+  letter-spacing: 0.05em;
+  color: rgba(255, 234, 46, 0.3);
+  font-weight: $regular;
+
+  @include mq('md'){
+    font-size: rem(60);
+    letter-spacing: 0.03em;
+  }
+}
+
+.p-section-404__text {
+  margin-top: rem(80);
+}

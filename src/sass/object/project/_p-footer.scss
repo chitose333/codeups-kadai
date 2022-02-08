@@ -1,0 +1,128 @@
+@use 'global' as *;
+
+.p-footer {
+  @include mq('md'){
+    padding: rem(32) 0 rem(26);
+  }
+}
+
+.p-footer__container {
+  text-align: center;
+  margin: rem(48) auto 0;
+
+  @include mq('md'){
+    padding: 0 rem(32);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.p-footer__logo {
+  width: 18.667%;
+  display: block;
+  margin: auto;
+  margin-bottom: rem(8);
+
+  @include mq('md'){
+    width: rem(70);
+    margin: 0;
+  }
+}
+
+.p-footer__logo img {
+  width: 100%;
+}
+.p-footer__menu {
+  @include mq('md'){
+    height: inherit;
+  }
+}
+
+.p-footer__menu__items {
+  @include mq('md'){
+    display: flex;
+    height: inherit;
+    align-items: center;
+  }
+}
+
+.p-footer__menu__item:not(:last-child) {
+  margin-bottom: rem(7.5);
+
+  @include mq('md'){
+    margin-bottom: 0;
+  }
+}
+
+.p-footer__menu__item {
+  height: inherit;
+  letter-spacing: 0.04em;
+}
+
+.p-footer__menu__item a {
+  @include mq('md'){
+    height: inherit;
+    display: grid;
+    place-items: center;
+    padding: rem(5) rem(16) 0;
+    font-size: rem(16);
+    position :relative;
+    transition: all 0.3s ease 0s;
+    letter-spacing: 0.1em;
+  }
+}
+
+.p-footer__menu__item a:hover::after {
+  @include mq('md'){
+    position: absolute;
+    content:"";
+    width: 80%;
+    height: rem(1);
+    bottom: rem(-2);
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $yellow;
+    box-sizing: content-box;
+  }
+}
+
+.p-footer__menu__item--contact a {
+  margin-left: 0;
+
+  @include mq('md'){
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: rem(16);
+    position: relative;
+  }
+}
+
+.p-footer__menu__item--contact a:hover::after {
+  @include mq('md'){
+    position: absolute;
+    content:"";
+    width: 120%;
+    height: rem(1);
+    bottom: rem(-2);
+    right: 0;
+    background-color: $yellow;
+    box-sizing: content-box;
+  }
+}
+
+.p-footer__copyright {
+  text-align: center;
+  font-size: rem(11);
+  letter-spacing: 0.1em;
+  margin-top: rem(32);
+  margin-bottom: rem(48);
+
+  @include mq('md'){
+    font-size: rem(15);
+    margin-top: rem(75);
+    margin-bottom: 0;
+    letter-spacing: 0.08em;
+  }
+}
