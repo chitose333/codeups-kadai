@@ -1,0 +1,92 @@
+@use 'global' as *;
+
+.p-sub-content-unit {
+  @include mq('md'){
+  display:flex;
+  }
+}
+
+.p-sub-content-unit--right {
+  flex-direction: row-reverse;
+}
+
+.p-sub-content-unit--right .p-sub-content-unit__body {
+  @include mq('md'){
+    padding-left: 0;
+    padding-right: rem(30);
+  }
+}
+
+.p-sub-content-unit__img {
+  width: 100%;
+
+  @include mq('md'){
+    width: 50%;
+  }
+}
+
+.p-sub-content-unit__imgsize {
+  width: 100%;
+  padding-top: calc(261 / 374 * 100%); // 高さ/ 幅 × 100
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include mq('md'){
+    width: 100%;
+    padding-top: calc(367 / 550 * 100%); // 高さ/ 幅 × 100
+  }
+}
+
+.p-sub-content-unit__img1 {
+  background-image: url(/wp-content/themes/codeups-kadai/images/common/content-2.jpg);
+}
+
+.p-sub-content-unit__img2 {
+  background-image: url(/wp-content/themes/codeups-kadai/images/common/content-3.jpg);
+}
+
+.p-sub-content-unit__img3 {
+  background-image: url(/wp-content/themes/codeups-kadai/images/common/content-4.jpg);
+}
+
+.p-sub-content-unit__body {
+  margin-top: rem(24);
+
+  @include mq('md'){
+    width: 50%;
+    padding-left: rem(30);
+  }
+}
+
+.p-sub-content-unit__title {
+  text-align: center;
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+
+  @include mq('md'){
+    font-size: rem(25);
+    text-align: left;
+  }
+}
+
+.p-sub-content-unit__text {
+  margin-top: rem(24);
+  display: block;
+  width: 100%;
+  max-width: rem(600);
+  padding-right: $padding-sp;
+  padding-left: $padding-sp;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: rem(16);
+  font-weight: $regular;
+  letter-spacing: 0.125em;
+
+  @include mq('md'){
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

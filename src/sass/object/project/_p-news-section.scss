@@ -1,0 +1,17 @@
+@use 'global' as *;
+
+.p-news-section {
+  margin-top: rem(85);
+}
+
+.p-news-section .news__list {
+  justify-content: center;
+}
+
+.p-news-section .p-news__item:nth-child(n + 1) {
+  margin-top: rem(32);
+}
+
+.p-news-pagination {
+  margin-top: rem(104);
+}

@@ -1,0 +1,35 @@
+@use 'global' as *;
+.p-sub-main {
+  width: 100%;
+  height: rem(425);
+  position: relative;
+
+  @include mq('md'){
+    height: rem(370);
+  }
+}
+
+.p-sub-main::before {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: block;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.p-sub-main__title {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: rem(30);
+}

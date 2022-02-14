@@ -1,6 +1,6 @@
 @use 'global' as *;
 
-.p-top-contact {
+.p-contact {
   margin-top: rem(120);
   margin-bottom: rem(54);
 
@@ -9,16 +9,16 @@
   }
 }
 
-.p-top-contact__header {
+.p-contact__header {
   margin-bottom: rem(16);
 }
 
-.p-top-contact__bg {
+.p-contact__bg {
   background-color: $light-gray;
   color: $white;
 }
 
-.p-top-contact__container {
+.p-contact__container {
   padding-top: rem(40);
   padding-bottom: rem(64);
 
@@ -28,18 +28,18 @@
   }
 }
 
-.p-top-contact__body {
+.p-contact__body {
   @include mq('md'){
     margin-top: rem(19);
     text-align: center;
   }
 }
 
-.p-top-contact__text {
+.p-contact__text {
   letter-spacing: 0.13em;
 }
 
-.p-top-contact__footer {
+.p-contact__footer {
   margin-top: rem(43);
 
   @include mq('md'){

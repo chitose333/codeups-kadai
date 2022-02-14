@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.p-news-mainview  {
+  background-image: url(/wp-content/themes/codeups-kadai/images/sp/news-MV.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @include mq('md'){
+    background-image: url(/wp-content/themes/codeups-kadai/images/pc/news-MV.jpg);
+  }
+
+}
