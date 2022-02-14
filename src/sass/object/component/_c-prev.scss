@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.c-prev, .c-next a {
+  display: inline-block;
+  font-size: rem(16);
+  letter-spacing: 0.125em;
+  padding: rem(2) rem(12);
+  border: 1px solid $white;
+}

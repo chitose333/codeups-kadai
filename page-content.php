@@ -20,7 +20,7 @@
       <div class="p-sub-content__wrap">
         <div class="p-sub-content__unit p-sub-content-unit">
           <div class="p-sub-content-unit__img ">
-            <div class="p-sub-content-unit__imgsize p-sub-content-unit__img1"></div>
+            <div class="p-sub-content-unit__imgsize p-content__img1"></div>
           </div>
           <div class="p-sub-content-unit__body">
             <h3 class="p-sub-content-unit__title">企業理念１</h3>
@@ -30,7 +30,7 @@
         <!-- /.p-sub-content-unit -->
         <div class="p-sub-content__unit p-sub-content-unit p-sub-content-unit--right">
           <div class="p-sub-content-unit__img">
-            <div class="p-sub-content-unit__imgsize p-sub-content-unit__img2"></div>
+            <div class="p-sub-content-unit__imgsize p-content__img2"></div>
           </div>
           <div class="p-sub-content-unit__body">
             <h3 class="p-sub-content-unit__title">企業理念２</h3>
@@ -40,7 +40,7 @@
         <!-- /.p-sub-content-unit -->
         <div class="p-sub-content__unit p-sub-content-unit">
           <div class="p-sub-content-unit__img">
-            <div class="p-sub-content-unit__imgsize p-sub-content-unit__img3"></div>
+            <div class="p-sub-content-unit__imgsize p-content__img3"></div>
           </div>
           <div class="p-sub-content-unit__body">
             <h3 class="p-sub-content-unit__title">企業理念３</h3>

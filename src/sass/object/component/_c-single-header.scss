@@ -1,0 +1,25 @@
+@use 'global' as *;
+
+.c-single-header__title {
+  font-size: rem(20);
+
+  @include mq('md'){
+    font-size: rem(23)
+  }
+}
+
+.c-single-header__subtitle {
+  font-size: rem(16);
+  margin-top: rem(16);
+
+  @include mq('md'){
+    margin-top: rem(32);
+  }
+}
+
+.c-single-header__subtitle span {
+  letter-spacing: 0.1em;
+  border: 1px solid $white;
+  padding: rem(8) rem(20);
+  margin-left: rem(30);
+}

@@ -1,0 +1,9 @@
+@use 'global' as *;
+
+.p-works__category {
+  margin-top: rem(85);
+
+  @include mq('md'){
+    margin-top: rem(115);
+  }
+}

@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.c-pagination__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-pagination__container :not(:first-child) {
+  margin-left: rem(16);
+
+  @include mq('md'){
+    margin-left: rem(24);
+  }
+}

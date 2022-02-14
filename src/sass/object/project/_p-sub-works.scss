@@ -1,0 +1,16 @@
+@use 'global' as *;
+
+.p-sub-works__list {
+  margin: 0 calc(50% - 50vw);
+	width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(17);
+
+  @include mq('md'){
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: rem(40);
+  }
+}

@@ -76,15 +76,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     //   制作実績詳細のスライダー
   // サムネイル
-  var thumbs = new Swiper ('.works-page-slider-thumbs', {
+  var thumbs = new Swiper ('.p-works-single__thumbs', {
     slidesPerView: 'auto',
-    spaceBetween: 8,
+    // spaceBetween: 8,
+    breakpoints: {
+      300: {
+        spaceBetween: 24,
+      },
+      768: {
+        spaceBetween: 8,
+      }
+    },
     centeredSlides: true,
     loop: true,
     slideToClickedSlide: true,
   });
   //メイン
-  var slider = new Swiper ('.works-page-slider', {
+  var slider = new Swiper ('.p-works-single__slider', {
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,

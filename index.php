@@ -55,19 +55,19 @@
   </div><!--/.top-mainview-->
   <div class="p-top-news p-news l-inner">
   <ul class="p-top-news__list">
-        <li class="p-top-news__item top-news-item">
-          <div class="p-top-news-item__header">
-            <p class="p-top-news-item__date"><time datetime="2020-07-20">2020.07.20</time></p>
-            <p class="p-top-news-item__genre">お知らせ</p>
+        <li class="p-top-news__item p-news-item">
+          <div class="p-news-item__header">
+            <p class="p-news-item__date"><time datetime="2020-07-20">2020.07.20</time></p>
+            <p class="p-news-item__genre">お知らせ</p>
           </div>
-          <div class="p-top-news-item__title">
-            <a class="p-top-news-item__titletext">記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。</a>
+          <div class="p-news-item__title">
+            <a class="p-news-item__titletext">記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。記事タイトル。</a>
           </div>
           <!-- /.news__item__body -->
         </li>
         <!-- /.news__item -->
       </ul><!-- /.news__list -->
-      <div class="p-top-top-news__footer">
+      <div class="p-top-news__footer">
           <a class="p-top-news__button" href="#">すべて見る</a>
       </div>
   </div>
@@ -87,7 +87,7 @@
       <li class="p-top-content__item p-top-content-unit">
         <a href="#">
           <div class="p-top-content-unit__body">
-            <div class="p-top-content-unit__img p-top-content__img1"></div>
+            <div class="p-top-content-unit__img p-content__img1"></div>
             <p>経営理念ページへ</p>
           </div>
         </a>
@@ -95,7 +95,7 @@
       <li class="p-top-content__item p-top-content-unit">
         <a href="#">
           <div class="p-top-content-unit__body">
-            <div class="p-top-content-unit__img p-top-content__img2"></div>
+            <div class="p-top-content-unit__img p-content__img2"></div>
             <p>理念1へ</p>
           </div>
         </a>
@@ -103,7 +103,7 @@
       <li class="p-top-content__item p-top-content-unit">
         <a href="#">
           <div class="p-top-content-unit__body">
-            <div class="p-top-content-unit__img p-top-content__img3"></div>
+            <div class="p-top-content-unit__img p-content__img3"></div>
             <p>理念2へ</p>
           </div>
         </a>
@@ -111,7 +111,7 @@
       <li class="p-top-content__item p-top-content-unit">
         <a href="#">
           <div class="p-top-content-unit__body">
-            <div class="p-top-content-unit__img p-top-content__img4"></div>
+            <div class="p-top-content-unit__img p-content__img4"></div>
             <p>理念3へ</p>
           </div>
         </a>

@@ -1,0 +1,28 @@
+@use 'global' as *;
+
+.c-point-item {
+  position: relative;
+  border: 1px solid $white;
+  padding-top: rem(44);
+  padding-bottom: rem(32);
+}
+
+.c-point-item__title {
+  display: inline-block;
+  letter-spacing: 0.02em;
+  padding: rem(8) rem(25);
+  border: 1px solid $white;
+  border-radius: rem(32);
+  background-color: $black;
+  z-index: 2;
+  position: absolute;
+  top: rem(-23);
+  left: rem(38);
+}
+
+.c-point-item__text {
+  width: 90%;
+  margin: auto;
+  line-height: 1.875;
+  letter-spacing: 0.025em;
+}

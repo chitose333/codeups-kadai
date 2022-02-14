@@ -1,0 +1,21 @@
+@use 'global' as *;
+
+.c-category {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-category__btn:not(:first-child){
+  margin-left: rem(40);
+}
+
+.c-category__btn {
+  color: $white;
+  font-size: rem(16);
+  padding: rem(3) rem(10);
+}
+
+.c-category__btn--active {
+  background-color: #fff;
+  color: $gray;
+}

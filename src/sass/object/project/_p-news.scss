@@ -1,0 +1,12 @@
+@use 'global' as *;
+
+.p-news__item {
+  @include mq('md'){
+    width: 100%;
+    // max-width: rem(880);
+  }
+}
+
+.p-news__item .p-news-item__title {
+  margin-right: 0;
+}
