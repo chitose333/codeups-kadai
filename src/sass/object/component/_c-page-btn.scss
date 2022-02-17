@@ -1,13 +1,13 @@
 @use 'global' as *;
 
-.c-page-btn a {
+.page-number {
   display: inline-block;
   padding: rem(2) rem(8);
   border: 1px solid $white;
 }
 
 
-.c-page-btn.is-now {
+.page-number.current {
   color: $gray;
   background-color: $white;
 }

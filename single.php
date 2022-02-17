@@ -27,7 +27,7 @@
               </div><!-- /entry-tag-items -->
             </div>
             <!-- /.p-single__header -->
-          <?php
+          <!-- <?php
             if (has_post_thumbnail() ) {
             // アイキャッチ画像が設定されてれば大サイズで表示
             the_post_thumbnail('large');
@@ -35,7 +35,7 @@
             // なければnoimage画像をデフォルトで表示
             echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
             }
-          ?>
+          ?> -->
           <?php the_content(); ?>
 <!--
           <div class="single-blog__img">

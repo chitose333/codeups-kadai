@@ -1,0 +1,41 @@
+@use 'global' as *;
+
+.p-thanks {
+  text-align: center;
+  margin: rem(80) auto rem(120);
+
+  @include mq('md'){
+    margin: rem(150) auto;
+  }
+}
+
+.p-thanks__title, .p-thanks__text {
+  font-size: rem(20);
+  letter-spacing: 0.1em;
+  font-weight: normal;
+
+  @include mq('md'){
+    font-size: rem(34);
+  }
+}
+
+.p-thanks__text {
+  margin-top: rem(80);
+}
+
+.p-thanks__btn {
+  display: block;
+  margin: auto;
+  font-size: rem(20);
+  width: 100%;
+  padding: rem(10);
+  background-color: $gray;
+  border: 1px solid #fff;
+  text-align: center;
+  margin-top: rem(80);
+
+  @include mq('md'){
+    font-size: rem(16);
+    width: rem(360);
+  }
+}

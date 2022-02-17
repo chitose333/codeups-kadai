@@ -70,7 +70,7 @@
             </p>
           </div>
           <div class="p-news-item__title">
-            <a class="p-news-item__titletext">
+            <a href="<?php the_permalink(); ?>" class="p-news-item__titletext">
               <?php the_title(); ?>
             </a>
           </div>
@@ -81,7 +81,7 @@
       </ul><!-- /.news__list -->
       <?php endif; ?>
       <div class="p-top-news__footer">
-          <a href="<?php the_permalink(); //記事のリンクを表示 ?>" class="p-top-news__button" href="<?php echo esc_url( home_url( '/news' ) ); ?>">すべて見る</a>
+          <a  class="p-top-news__button" href="<?php echo esc_url( home_url( '/news' ) ); ?>">すべて見る</a>
       </div>
   </div>
   <!-- /.news -->

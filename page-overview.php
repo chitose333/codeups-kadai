@@ -4,7 +4,7 @@
   </div><!--/.news-mainview-->
   <div class="l-inner">
     <div class="l-breadcrumb">
-      <p>トップ ＞ 企業概要 </p>
+      <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
     <div class="p-sub-overview__container">
       <div class="p-sub-overview-item">

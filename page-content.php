@@ -4,7 +4,7 @@
   </div><!--/.content-mainview-->
   <div class="l-inner">
     <div class="l-breadcrumb">
-      <p>トップ ＞ 事業内容 </p>
+      <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
   </div>
   <section class="p-sub-content">

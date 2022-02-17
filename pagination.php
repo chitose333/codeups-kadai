@@ -1,6 +1,15 @@
 <div class="c-pagination l-pagination">
   <div class="c-pagination__container">
-    <div class="c-pagination__prev c-prev">
+  <?php the_posts_pagination(
+    array(
+        'mid_size'      => 0, // 現在ページの左右に表示するページ番号の数
+        'prev_next'     => true, // 「前へ」「次へ」のリンクを表示する場合はtrue
+        'prev_text'     => __( 'PREV'), // 「前へ」リンクのテキスト
+        'next_text'     => __( 'NEXT'), // 「次へ」リンクのテキスト
+        'type'          => 'plain', // 戻り値の指定 (plain/list)
+    )
+  ); ?>
+    <!-- <div class="c-pagination__prev c-prev">
       <a href="">PREV</a>
     </div>
     <div class="c-pagination__btn c-page-btn is-now">
@@ -17,6 +26,6 @@
     </div>
     <div class="c-pagination__next c-next">
       <a href="">NEXT</a>
-    </div>
+    </div> -->
   </div>
 </div><!--/.c-pagination-->

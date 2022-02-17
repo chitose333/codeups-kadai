@@ -13,3 +13,30 @@
     margin-left: rem(24);
   }
 }
+
+.c-pagination__container ul {
+  display: flex;
+}
+
+.c-pagination__container a {
+  display: inline-block;
+  padding: rem(2) rem(8);
+  border: 1px solid $white;
+
+  @include mq('md'){
+    padding: rem(3) rem(10);
+  }
+}
+
+// .c-pagination__container span {
+//   color: $gray;
+//   background-color: $white;
+// }
+
+.page-numbers.current {
+  display: inline-block;
+  padding: rem(2) rem(8);
+  color: $gray;
+  background-color: $white;
+
+}

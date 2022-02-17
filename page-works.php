@@ -4,7 +4,7 @@
   </div><!--/.works-mainview-->
   <div class="l-inner">
     <div class="l-breadcrumb">
-      <p>トップ ＞ 制作実績 </p>
+      <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
     <div class="p-works__category c-category">
       <a href="#" class="c-category__btn c-category__btn--active">ALL</a>
@@ -63,7 +63,7 @@
       </div><!--/.p-sub-works-item-->
     </div>
     <!-- /.works__list -->
-    
+
     <?php get_template_part('pagination'); ?>
 
   </div><!--/.l-inner-->

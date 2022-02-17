@@ -48,23 +48,23 @@
       </a>
       <nav class="l-header__drawer c-drawer-menu">
         <ul class="c-drawer-menu__items">
-          <li class="c-drawer-menu__item"><a href="">トップ</a></li>
-          <li class="c-drawer-menu__item"><a href="">お知らせ</a></li>
-          <li class="c-drawer-menu__item"><a href="">事業内容</a></li>
+          <li class="c-drawer-menu__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
+          <li class="c-drawer-menu__item"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a></li>
+          <li class="c-drawer-menu__item"><a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a></li>
           <li class="c-drawer-menu__item"><a href="">制作実績</a></li>
-          <li class="c-drawer-menu__item"><a href="">企業概要</a></li>
+          <li class="c-drawer-menu__item"><a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a></li>
           <li class="c-drawer-menu__item"><a href="">ブログ</a></li>
-          <li class="c-drawer-menu__item"><a href="">お問い合わせ</a></li>
+          <li class="c-drawer-menu__item"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a></li>
         </ul>
       </nav>
       <nav class="l-header__nav c-pc-nav">
         <ul class="c-pc-nav__items">
-          <li class="c-pc-nav__item"><a href="">お知らせ</a></li>
-          <li class="c-pc-nav__item"><a href="">事業内容</a></li>
+          <li class="c-pc-nav__item"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a></li>
+          <li class="c-pc-nav__item"><a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a></li>
           <li class="c-pc-nav__item"><a href="">制作実績</a></li>
-          <li class="c-pc-nav__item"><a href="">企業概要</a></li>
+          <li class="c-pc-nav__item"><a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a></li>
           <li class="c-pc-nav__item"><a href="">ブログ</a></li>
-          <li class="c-pc-nav__item c-pc-nav__item--white"><a href="">お問い合わせ</a></li>
+          <li class="c-pc-nav__item c-pc-nav__item--white"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a></li>
         </ul>
       </nav>
     </div><!--header__inner-->

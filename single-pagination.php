@@ -7,8 +7,9 @@
     <div class="c-pagination__prev c-prev">
       <?php previous_post_link('%link', '&laquo; %title'); ?>
     </div>
+    <?php endif; ?>
     <div class="c-pagination__btn c-page-btn is-now">
-      <a href="">一覧</a>
+      <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">一覧</a>
     </div>
     <!-- <div class="pagination__btn page-btn">
       <a href="">2</a>

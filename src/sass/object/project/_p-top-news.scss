@@ -17,14 +17,14 @@
   }
 }
 
-.p-top-news__list {
-  display: flex;
-  flex-wrap: wrap;
+// .p-top-news__list {
+//   display: flex;
+//   flex-wrap: wrap;
 
-  @include mq('md'){
-    flex: 0 0 85%;
-  }
-}
+//   @include mq('md'){
+//     flex: 0 0 85%;
+//   }
+// }
 
 .p-top-news__item {
   @include mq('md'){
@@ -32,6 +32,9 @@
   }
 }
 
+.p-top-news__item:not(:first-child) {
+  margin-top: rem(30);
+}
 
 .p-top-news__footer {
   padding-top: rem(10);

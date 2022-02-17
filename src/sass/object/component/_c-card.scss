@@ -4,6 +4,12 @@
   width: 100%;
 }
 
+.c-card__header img {
+  width: 100%;
+  height: rem(170);
+  object-fit: cover;
+}
+
 .c-card__body {
   background-color: $white;
   color :$gray;

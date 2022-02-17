@@ -2,7 +2,7 @@
 <section class="p-works-single">
   <div class="l-inner">
     <div class="l-breadcrumb">
-      <p>トップ ＞ 制作実績 ＞ 制作実績詳細</p>
+      <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
     <div class="l-single-inner p-works-single__inner">
       <div class="p-works-single__header c-single-header">
