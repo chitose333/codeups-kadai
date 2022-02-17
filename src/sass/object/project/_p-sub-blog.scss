@@ -1,0 +1,40 @@
+@use 'global' as *;
+.p-sub-blog__category {
+  margin-top: rem(85);
+
+  @include mq('md'){
+    margin-top: rem(115);
+  }
+}
+
+.p-sub-blog__items {
+  margin-top: rem(40);
+}
+
+.p-sub-blog__item {
+  width: 100%;
+
+  @include mq('md'){
+    width: calc(33.3% - 25px * 2 /3);//rem(25)での書き方
+  }
+}
+
+.p-sub-blog__item:not(:first-child) {
+  margin-top: rem(24);
+
+  @include mq('md'){
+    margin-top: 0;
+  }
+}
+
+.p-sub-blog__item:not(:nth-child(3n + 1)){
+  @include mq('md'){
+  margin-left: rem(25);
+  }
+}
+
+.p-sub-blog__item:nth-child(n + 4){
+  @include mq('md'){
+  margin-top: rem(48);
+  }
+}

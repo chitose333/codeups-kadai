@@ -1,0 +1,59 @@
+@use 'global' as *;
+
+.p-sub-overview__container {
+  margin-top: rem(85);
+
+  @include mq('md'){
+    margin-top: rem(148);
+  }
+}
+
+.p-sub-overview-item {
+  width: 100%;
+  display: flex;
+  padding-bottom: rem(28);
+  border-bottom: 1px solid $white;
+}
+
+.p-sub-overview-item:not(:first-child) {
+  margin-top: rem(16);
+
+  @include mq('md'){
+    margin-top: rem(30);
+  }
+}
+
+.p-sub-overview-item__title {
+  width: 15%;
+}
+
+.p-sub-overview__map {
+  margin-top: rem(120);
+  width: 100%;
+
+  @include mq('md'){
+    margin-top: rem(80);
+    // right: 0;
+    // top: rem(90);
+    // z-index: -1;
+  }
+}
+
+.iframe-wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 80%;
+
+  @include mq('md'){
+    padding-top: 33.4%;
+  }
+}
+
+.iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

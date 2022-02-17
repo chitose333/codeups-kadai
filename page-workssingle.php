@@ -66,66 +66,7 @@
     </div>
     <!-- /.p-works-single__inner -->
     <?php get_template_part('single-pagination'); ?>
-    <section class="p-related l-related">
-      <div class="p-related__title">関連記事</div>
-      <!-- /.p-related__title -->
-      <ul class="p-related__body">
-        <li class="p-related__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/related1.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <!-- <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
-        <li class="p-related__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/related2.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <!-- <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
-        <li class="p-related__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/related3.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <!-- <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
-        <li class="p-related__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/related4.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <!-- <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p> -->
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
-      </ul>
-      <!-- /.p-related__body -->
-    </section>
-    <!-- /.related -->
+    <?php get_template_part('related'); ?>
   </div><!--/.l-inner-->
 </section>
 <!-- /.works-single -->
