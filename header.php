@@ -32,8 +32,8 @@
 </head>
 <body>
   <?php wp_body_open(); ?>
-  <!-- <div class="c-bg-border"></div>
-  <div class="c-bg-border2"></div> -->
+  <div class="c-bg-border"></div>
+  <div class="c-bg-border2"></div>
   <header class="l-header">
     <div class="l-header__inner">
       <div class="l-header__logo">

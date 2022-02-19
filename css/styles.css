@@ -532,7 +532,7 @@ sp-nav
   line-height: 60px;
   line-height: 3.75rem;
   text-align: center;
-  color: #967563;
+  color: border;
   letter-spacing: 0.12em;
 }
 
@@ -2615,7 +2615,7 @@ pc-nav
 }
 
 .p-contact__bg {
-  background-color: #967563;
+  background-color: border;
   color: #fff;
 }
 
