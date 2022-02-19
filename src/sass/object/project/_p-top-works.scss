@@ -1,10 +1,10 @@
 @use 'global' as *;
 
 .p-top-works__bg {
-  background-color: $gray;
+  background-color: $ac-pink;
 
   @include mq('md'){
-    background: linear-gradient(90deg, $black 0%, $black 30%, $gray 30%, $gray 100%);
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, $ac-pink 30%, $ac-pink 100%);
     // padding: rem(80) 0;
   }
 }

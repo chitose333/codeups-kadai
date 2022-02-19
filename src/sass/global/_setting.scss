@@ -39,9 +39,21 @@ $white: #fff;
 $bg-black: #120E19;
 $yellow: #FFEA2E;
 $pale-yellow: #F9F871;
-$gray: #333;
-$light-gray: #3D3D3D;
+// $gray: #333;
+$footer-brawn: #3D3D3D;
 $beige: #FFBA6A;
+$pink: #BA9595;
+$ac-pink: #614646;
+$header-pink: #B77979;
+$footer-brawn: #967563;
+//$blackを$pinkに変更
+//$grayをac-pinkに変更
+//$footer-brawnを$footer-brawnに変更
+
+body {
+  background-color: #C2A890;
+  color: $white;
+}
 
 ////////////////////
 // メディアクエリとブレークポイントの設定

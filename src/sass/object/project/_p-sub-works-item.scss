@@ -39,6 +39,12 @@
   width: 100%;
 }
 
+.p-sub-works-item__img img {
+  width: rem(525);
+  height: rem(325);
+  object-fit: cover;
+}
+
 .p-sub-works-item__cate {
   padding: rem(8) rem(20);
   background-color: $black;

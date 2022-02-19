@@ -17,10 +17,10 @@
 }
 
 .p-top-overview__bg {
-  background-color: $gray;
+  background-color: $ac-pink;
 
   @include mq('md'){
-    background: linear-gradient(90deg, $gray 0%, $gray 70%, transparent 70%, transparent 100%);
+    background: linear-gradient(90deg, $ac-pink 0%, $ac-pink 70%, transparent 70%, transparent 100%);
     margin-top: -4px;
   }
 }

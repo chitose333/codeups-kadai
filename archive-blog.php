@@ -7,10 +7,20 @@
       <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
     <div class="p-sub-blog__category c-category">
-      <a href="#" class="c-category__btn c-category__btn--active">ALL</a>
+      <a class="c-category__btn is-active" href="<?php echo esc_url( get_post_type_archive_link( 'blog' ) ); ?>">ALL</a>
+      <?php
+        $genre_terms = get_terms( 'blog_category', array( 'hide_empty' => false ) );
+        foreach ( $genre_terms as $genre_term ) :
+      ?>
+
+      <a class="c-category__btn" href="<?php echo esc_url( get_term_link( $genre_term, 'genre' ) ); ?>"><?php echo esc_html( $genre_term->name ); ?></a>
+      <?php
+        endforeach;
+      ?>
+      <!-- <a href="#" class="c-category__btn c-category__btn--active">ALL</a>
       <a href="#" class="c-category__btn">カテゴリ1</a>
       <a href="#" class="c-category__btn">カテゴリ2</a>
-      <a href="#" class="c-category__btn">カテゴリ3</a>
+      <a href="#" class="c-category__btn">カテゴリ3</a> -->
     </div>
     <?php if ( have_posts() ) : ?>
     <ul class="c-cards p-sub-blog__items">

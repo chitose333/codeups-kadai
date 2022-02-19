@@ -33,8 +33,8 @@
   left: 23%;
   transform: translateX(-50%);
   transform: translateY(-50%);
-  border-top: solid 2px $gray;
-  border-left: solid 2px $gray;
+  border-top: solid 2px $ac-pink;
+  border-left: solid 2px $ac-pink;
   width: rem(24);
   height: rem(24);
   transform: rotate(45deg)
@@ -42,7 +42,7 @@
 
 .c-pagetop:hover {
   @include mq('md'){
-    background-color: $gray;
+    background-color: $ac-pink;
   }
 }
 

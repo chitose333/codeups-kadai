@@ -7,7 +7,7 @@
   font-size: rem(20);
   box-sizing: border-box;
   border: 1px solid $white;
-  background-color: $gray;
+  background-color: $ac-pink;
   text-align: center;
   cursor: pointer;
   color: $white;
@@ -37,7 +37,7 @@
 
 .c-util-link:hover {
   @include mq('md'){
-    color: $gray;
+    color: $ac-pink;
   }
 }
 

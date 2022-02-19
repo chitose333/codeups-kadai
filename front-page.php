@@ -135,7 +135,7 @@
     <div class="l-inner">
       <div class="top-works__header c-section__header">
         <div class="c-section-title__container">
-          <h2 class="c-section-title">制作実績</h2>
+          <h2 class="c-section-title">挙式・披露宴のご紹介</h2>
           <span class="c-section-title__sub c-section-title__sub--right">Works</span>
         </div>
       </div>
@@ -149,17 +149,17 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/works-1.jpg" alt="works1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works2.jpg" alt="works1">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/works-2.jpg" alt="works1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works4.jpg" alt="">
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/common/works-3.jpg" alt="works1">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works7.jpg" alt="">
                   </div>
                 </div>
               </div>
@@ -169,8 +169,10 @@
           </div><!--/.top-works__img-->
           <div class="p-top-works__body">
             <div class="c-util-body">
-              <h3 class="c-util-body__title">メインタイトルが入ります。</h3>
-              <p class="c-util-body__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+              <h3 class="c-util-body__title">私たちのホームパーティに招待したような披露宴にしたかった。</h3>
+              <p class="c-util-body__text">きてくれた友人たちから口々に「とても良い会だった」と言ってもらえ、とても安心した。
+              私たちのホームパーティーにみんなを招待したようなものにしたかったので、
+              まさに理想的な雰囲気で楽しく・とても賑やかで良かったです！  </p>
               <div class="c-util-link__container util-body__footer">
                 <a class="c-util-link" href="#">詳しく見る</a>
               </div>

@@ -12,7 +12,7 @@
 
 .c-card__body {
   background-color: $white;
-  color :$gray;
+  color :$ac-pink;
   padding: rem(2) rem(22) rem(17);
   transition: all 0.3s ease 0s;
 }
@@ -22,12 +22,12 @@
 // }
 
 .c-card__link:hover .c-card__body {
-  background-color: $gray;
+  background-color: $ac-pink;
   color: $white;
 }
 
 .c-card__link:hover .c-card__genre {
-  color: $gray;
+  color: $ac-pink;
 }
 
 .c-card__title {
@@ -79,7 +79,7 @@
 }
 
 .c-card__genre a {
-  color: $gray;
+  color: $ac-pink;
   font-size: rem(14);
   line-height: 2;
 }
@@ -113,6 +113,6 @@
   border-radius: 50%;
   line-height: rem(60);
   text-align: center;
-  color: $light-gray;
+  color: $footer-brawn;
   letter-spacing: 0.12em;
 }

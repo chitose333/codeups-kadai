@@ -3,6 +3,11 @@ body {
   font-family: "Noto Sans JP", sans-serif;
 }
 
+body {
+  background-color: #C2A890;
+  color: #fff;
+}
+
 .u-desktop {
   display: none;
 }
@@ -56,11 +61,6 @@ a {
   a:hover {
     opacity: 0.8;
   }
-}
-
-body {
-  background-color: #120E19;
-  color: #fff;
 }
 
 *,
@@ -188,7 +188,7 @@ sp-nav
 ===========================================*/
 .l-header {
   width: 100%;
-  background-color: rgba(17, 17, 17, .5);
+  background-color: rgba(97, 70, 70, .7);
   position: fixed;
   top: 0;
   left: 0;
@@ -200,7 +200,7 @@ sp-nav
 }
 
 .l-header.change-color {
-  background-color: #111111;
+  background-color: #614646;
 }
 
 .l-header__inner {
@@ -408,7 +408,7 @@ sp-nav
 
 .c-card__body {
   background-color: #fff;
-  color: #333;
+  color: #614646;
   padding: 2px 22px 17px;
   padding: 0.125rem 1.375rem 1.0625rem;
   -webkit-transition: all 0.3s ease 0s;
@@ -416,12 +416,12 @@ sp-nav
 }
 
 .c-card__link:hover .c-card__body {
-  background-color: #333;
+  background-color: #614646;
   color: #fff;
 }
 
 .c-card__link:hover .c-card__genre {
-  color: #333;
+  color: #614646;
 }
 
 .c-card__title {
@@ -490,7 +490,7 @@ sp-nav
 }
 
 .c-card__genre a {
-  color: #333;
+  color: #614646;
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 2;
@@ -532,7 +532,7 @@ sp-nav
   line-height: 60px;
   line-height: 3.75rem;
   text-align: center;
-  color: #3D3D3D;
+  color: #967563;
   letter-spacing: 0.12em;
 }
 
@@ -588,9 +588,9 @@ sp-nav
   padding: 0.1875rem 0.625rem;
 }
 
-.c-category__btn--active {
+.c-category__btn.is-active {
   background-color: #fff;
-  color: #333;
+  color: #614646;
 }
 
 .c-drawer-menu {
@@ -766,7 +766,7 @@ html.is-fixed {
 }
 
 .page-number.current {
-  color: #333;
+  color: #614646;
   background-color: #fff;
 }
 
@@ -800,8 +800,8 @@ html.is-fixed {
           transform: translateX(-50%);
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  border-top: solid 2px #333;
-  border-left: solid 2px #333;
+  border-top: solid 2px #614646;
+  border-left: solid 2px #614646;
   width: 24px;
   width: 1.5rem;
   height: 24px;
@@ -812,7 +812,7 @@ html.is-fixed {
 
 @media screen and (min-width: 768px) {
   .c-pagetop:hover {
-    background-color: #333;
+    background-color: #614646;
   }
 }
 
@@ -865,7 +865,7 @@ html.is-fixed {
   display: inline-block;
   padding: 2px 8px;
   padding: 0.125rem 0.5rem;
-  color: #333;
+  color: #614646;
   background-color: #fff;
 }
 
@@ -936,12 +936,12 @@ pc-nav
   background-color: #fff;
   padding: 0 32px;
   padding: 0 2rem;
-  color: #333;
+  color: #614646;
   letter-spacing: 0.1em;
 }
 
 .c-pc-nav__item.c-pc-nav__item--white a:hover {
-  background-color: #333;
+  background-color: #614646;
   color: #fff;
 }
 
@@ -989,7 +989,7 @@ pc-nav
   width: 100%;
   padding: 10px;
   padding: 0.625rem;
-  background-color: #333;
+  background-color: #614646;
   border: 1px solid #fff;
   text-align: center;
   margin-top: 80px;
@@ -1039,8 +1039,8 @@ pc-nav
   text-align: center;
   font-family: "Noto Serif JP", serif;
   font-weight: 300;
-  color: #F9F871;
-  opacity: 20%;
+  color: #740000;
+  opacity: 30%;
   font-size: 50px;
   font-size: 3.125rem;
   line-height: 1;
@@ -1109,7 +1109,7 @@ pc-nav
 @media screen and (min-width: 768px) {
   .c-util-body {
     padding: 0;
-    background-color: #333;
+    background-color: #614646;
   }
 }
 
@@ -1166,7 +1166,7 @@ pc-nav
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
-  background-color: #333;
+  background-color: #614646;
   text-align: center;
   cursor: pointer;
   color: #fff;
@@ -1197,7 +1197,7 @@ pc-nav
 
 @media screen and (min-width: 768px) {
   .c-util-link:hover {
-    color: #333;
+    color: #614646;
   }
 }
 
@@ -1517,11 +1517,11 @@ pc-nav
   letter-spacing: 0.125em;
 }
 .submit-button:hover {
-  background: #333;
+  background: #614646;
   color: #fff;
 }
 .submit-button.-active {
-  background: #333;
+  background: #614646;
   color: #fff;
 }
 
@@ -1867,7 +1867,7 @@ pc-nav
 
 .p-related__title {
   width: 100%;
-  background-color: #333;
+  background-color: #614646;
   border: 1px solid #fff;
   text-align: center;
   letter-spacing: 0.125em;
@@ -2475,6 +2475,15 @@ pc-nav
   width: 100%;
 }
 
+.p-sub-works-item__img img {
+  width: 525px;
+  width: 32.8125rem;
+  height: 325px;
+  height: 20.3125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-sub-works-item__cate {
   padding: 8px 20px;
   padding: 0.5rem 1.25rem;
@@ -2548,7 +2557,7 @@ pc-nav
   width: 100%;
   padding: 10px;
   padding: 0.625rem;
-  background-color: #333;
+  background-color: #614646;
   border: 1px solid #fff;
   text-align: center;
   margin-top: 80px;
@@ -2606,7 +2615,7 @@ pc-nav
 }
 
 .p-contact__bg {
-  background-color: #3D3D3D;
+  background-color: #967563;
   color: #fff;
 }
 
@@ -2944,7 +2953,7 @@ pc-nav
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #fff;
-  background-color: #333;
+  background-color: #614646;
   text-align: center;
   cursor: pointer;
   color: #fff;
@@ -2978,8 +2987,8 @@ pc-nav
     left: 0;
     z-index: -1;
     content: "";
-    background: #333;
-    border: 1px solid #333;
+    background: #614646;
+    border: 1px solid #614646;
     -webkit-transform-origin: right top;
             transform-origin: right top;
     -webkit-transform: scale(0, 1);
@@ -3027,12 +3036,12 @@ pc-nav
 }
 
 .p-top-overview__bg {
-  background-color: #333;
+  background-color: #614646;
 }
 @media screen and (min-width: 768px) {
   .p-top-overview__bg {
-    background: -webkit-gradient(linear, left top, right top, from(#333), color-stop(70%, #333), color-stop(70%, transparent), to(transparent));
-    background: linear-gradient(90deg, #333 0%, #333 70%, transparent 70%, transparent 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#614646), color-stop(70%, #614646), color-stop(70%, transparent), to(transparent));
+    background: linear-gradient(90deg, #614646 0%, #614646 70%, transparent 70%, transparent 100%);
     margin-top: -4px;
   }
 }
@@ -3078,12 +3087,12 @@ pc-nav
 }
 
 .p-top-works__bg {
-  background-color: #333;
+  background-color: #614646;
 }
 @media screen and (min-width: 768px) {
   .p-top-works__bg {
-    background: -webkit-gradient(linear, left top, right top, from(#111), color-stop(30%, #111), color-stop(30%, #333), to(#333));
-    background: linear-gradient(90deg, #111 0%, #111 30%, #333 30%, #333 100%);
+    background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(30%, transparent), color-stop(30%, #614646), to(#614646));
+    background: linear-gradient(90deg, transparent 0%, transparent 30%, #614646 30%, #614646 100%);
   }
 }
 
@@ -3163,7 +3172,7 @@ pc-nav
 }
 @media screen and (min-width: 768px) {
   .p-works-mainview {
-    background-image: url(/wp-content/themes/codeups-kadai/images/works/pc/works-MV.jpg);
+    background-image: url(/wp-content/themes/codeups-kadai/images/works/pc/works-MV1.jpg);
   }
 }
 

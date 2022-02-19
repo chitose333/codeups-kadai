@@ -15,7 +15,7 @@
   padding: rem(3) rem(10);
 }
 
-.c-category__btn--active {
+.c-category__btn.is-active {
   background-color: #fff;
-  color: $gray;
+  color: $ac-pink;
 }

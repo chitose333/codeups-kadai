@@ -53,8 +53,8 @@ function change_set_post($query){
     $query->set('posts_per_page','3');
     return;
   }
-  if($query->is_post_type_archive()) {
-    $query->set('posts_per_page','9');
+  if($query->is_post_type_archive('blog') || is_tax(['blog_category', 'blog_tag'])) {
+    $query->set('posts_per_page','6');
     return;
   }
 }
@@ -94,4 +94,15 @@ function add_thanks_page() {
   </script>
   EOD;
   }
-  add_action( 'wp_footer', 'add_thanks_page' );
+add_action( 'wp_footer', 'add_thanks_page' );
+
+
+  //カスタム投稿タイプ（ブログ）：　アーカイブページ抜粋文の長さ変更
+function change_excerpt_length() {
+  $length = 80;
+  if(is_post_type_archive('blog') || is_tax(['blog_category', 'blog_tag'])) {
+    return 45;
+  }
+  return $length; //デフォルト110字
+}
+add_filter('excerpt_length', 'change_excerpt_length', 999);

@@ -13,7 +13,19 @@
                 <?php echo get_the_date('Y/m/d'); ?>
               </p>
               <div class="p-single__cat">
-                <?php the_category(); ?>
+                <!-- デフォルトの投稿記事ページだったら -->
+                <?php if(get_post_type() === 'post'):  ?>
+                  <?php the_category(); ?>
+                <!-- それ以外だったら（ブログだったら） -->
+                <?php else: ?>
+                  <!-- <?php echo esc_html( get_the_terms( get_the_ID(), 'blog_category' )[0]->name ); ?> -->
+                  <?php
+                    $terms = get_the_terms($post->ID, 'blog_category');
+                    foreach($terms as $term) {
+                      echo  '<a href=" ' . get_term_link( $term ). ' ">' . $term -> name . '</a>' ;
+                    }
+                  ?>
+                <?php endif; ?>
               </div>
               <!-- entry-tag-items -->
               <?php $post_tags = get_the_tags(); ?>
@@ -64,7 +76,7 @@
       </div>
       <!-- /.single-blog__inner -->
 
-      <?php get_template_part('single-pagination'); ?>
+      <?php get_template_part('pagination'); ?>
       <?php get_template_part('related'); ?>
 
     </div><!--/.l-inner-->
