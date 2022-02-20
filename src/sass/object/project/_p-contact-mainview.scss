@@ -1,12 +1,12 @@
 @use 'global' as *;
 
 .p-contact-mainview  {
-  background-image: url(/wp-content/themes/codeups-kadai/images/sp/contact-MV.jpg);
+  background-image: url(/wp-content/themes/codeups-kadai/images/common/contact-MV2.jpg);
   background-size: cover;
   background-position: center;
 
   @include mq('md'){
-    background-image: url(/wp-content/themes/codeups-kadai/images/pc/contact-MV.jpg);
+    // background-image: url(/wp-content/themes/codeups-kadai/images/pc/contact-MV.jpg);
   }
 
 }

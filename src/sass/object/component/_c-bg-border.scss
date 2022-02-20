@@ -18,7 +18,7 @@
   transform: translateX(-50%);
   width: rem(1);
   height: rem(736);
-  background-color: $pale-yellow;
+  background-color: #F5E9C9;
   transform: rotate(-29deg);
   overflow: hidden;
   z-index: -5;
@@ -30,7 +30,7 @@
     transform: translateX(-50%);
     width: rem(1);
     height: calc(1800 / 1280 * 100vw);//rem(1922
-    background-color: $pale-yellow;
+    background-color: #F5E9C9;
     transform: rotate(135deg);
     z-index: -5;
     overflow: hidden;
@@ -44,7 +44,7 @@
   transform: translateX(-50%);
   width: rem(1);
   height: rem(1000);//78.125vw
-  background-color: $pale-yellow;
+  background-color: #F5E9C9;
   transform: rotate(15deg);
   overflow: hidden;
   z-index: -5;
@@ -56,7 +56,7 @@
     transform: translateX(-50%);
     width: rem(1);
     height: calc(1922 / 1280 * 100vw);//rem(1922)
-    background-color: $pale-yellow;
+    background-color: #F5E9C9;
     transform: rotate(45deg);
     z-index: -5;
     overflow: hidden;

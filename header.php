@@ -32,13 +32,16 @@
 </head>
 <body>
   <?php wp_body_open(); ?>
+  <?php
+    if( is_front_page() ) : ?>
   <div class="c-bg-border"></div>
   <div class="c-bg-border2"></div>
+  <?php endif; ?>
   <header class="l-header">
     <div class="l-header__inner">
       <div class="l-header__logo">
-        <a class="logo__link" href="#">
-          <img src="./images/common/CodeUps.png" alt="">
+        <a class="logo__link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header__logo.png" alt="">
         </a>
       </div>
       <a id="MenuButton" href="#" class="sp-header__drawer c-hamburger js-drawer-open">
@@ -55,10 +58,10 @@
             <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a>
           </li>
           <li class="c-drawer-menu__item">
-            <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a>
+            <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">サービスについて</a>
           </li>
           <li class="c-drawer-menu__item">
-            <a href="">制作実績</a>
+            <a href="<?php echo esc_url( home_url( '/works' ) ); ?>">挙式・披露宴のご紹介</a>
           </li>
           <li class="c-drawer-menu__item">
             <a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a>
@@ -77,10 +80,10 @@
             <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a>
           </li>
           <li class="c-pc-nav__item">
-            <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a>
+            <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">サービスについて</a>
           </li>
           <li class="c-pc-nav__item">
-            <a href="">制作実績</a>
+            <a href="<?php echo esc_url( home_url( '/works' ) ); ?>">挙式・披露宴のご紹介</a>
           </li>
           <li class="c-pc-nav__item">
             <a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a>

@@ -5,6 +5,13 @@
     margin-bottom: rem(148);
   }
 }
+.p-top-blog__item:not(:first-child) {
+  margin-top: rem(24);
+
+  @include mq('md'){
+    margin-top: 0;
+  }
+}
 
 .p-top-blog__header {
   margin-bottom: rem(68);
@@ -19,6 +26,8 @@
 }
 
 .p-top-blog__footer {
+  margin-top: rem(24);
+  
   @include mq('md'){
     text-align: center;
     margin-top: rem(56);

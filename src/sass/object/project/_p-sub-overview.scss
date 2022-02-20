@@ -24,7 +24,11 @@
 }
 
 .p-sub-overview-item__title {
-  width: 15%;
+  width: 30%;
+
+  @include mq('md'){
+    width: 20%;
+  }
 }
 
 .p-sub-overview__map {

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <div class="p-sub-main p-overview-mainview">
-    <h1 class="p-sub-main__title">お知らせ</h1>
+    <h1 class="p-sub-main__title"><?php the_title(); ?></h1>
   </div><!--/.news-mainview-->
   <div class="l-inner">
     <div class="l-breadcrumb">
@@ -9,38 +9,38 @@
     <div class="p-sub-overview__container">
       <div class="p-sub-overview-item">
         <p class="p-sub-overview-item__title">会社名</p>
-        <p class="p-sub-overview-item__text">株式会社CodeUps</p>
+        <p class="p-sub-overview-item__text">株式会社C-links</p>
       </div>
       <!-- /.p-sub-overview-item -->
       <div class="p-sub-overview-item">
         <p class="p-sub-overview-item__title">設立</p>
-        <p class="p-sub-overview-item__text">テキストが入ります。</p>
+        <p class="p-sub-overview-item__text">2022年2月22日</p>
       </div>
       <!-- /.p-sub-overview-item -->
       <div class="p-sub-overview-item">
         <p class="p-sub-overview-item__title">資本金</p>
-        <p class="p-sub-overview-item__text">テキストが入ります。</p>
+        <p class="p-sub-overview-item__text">1,000万円</p>
       </div>
       <!-- /.p-sub-overview-item -->
     </div>
     <div class="p-sub-overview-item">
       <p class="p-sub-overview-item__title">売上高</p>
-      <p class="p-sub-overview-item__text">テキストが入ります。</p>
+      <p class="p-sub-overview-item__text">1,000,000円</p>
     </div>
     <!-- /.p-sub-overview-item -->
     <div class="p-sub-overview-item">
       <p class="p-sub-overview-item__title">従業員数</p>
-      <p class="p-sub-overview-item__text">テキストが入ります。</p>
+      <p class="p-sub-overview-item__text">300人</p>
     </div>
     <!-- /.p-sub-overview-item -->
     <div class="p-sub-overview-item">
       <p class="p-sub-overview-item__title">事業内容</p>
-      <p class="p-sub-overview-item__text">テキストが入ります。</p>
+      <p class="p-sub-overview-item__text">ウェディング事業・衣装貸出業・撮影業</p>
     </div>
     <!-- /.p-sub-overview-item -->
     <div class="p-sub-overview-item">
       <p class="p-sub-overview-item__title">所在地</p>
-      <p class="p-sub-overview-item__text">東京駅</p>
+      <p class="p-sub-overview-item__text">東京</p>
     </div>
     <!-- /.p-sub-overview-item -->
     <!-- /.overview__container -->

@@ -1,11 +1,11 @@
 @use 'global' as *;
 
 .p-overview-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/sp/overview-MV.jpg);
+  background-image: url(/wp-content/themes/codeups-kadai/images/common/overview.jpg);
   background-size: cover;
 
   @include mq('md'){
-    background-image: url(/wp-content/themes/codeups-kadai/images/pc/overview-MV.jpg);
+    // background-image: url(/wp-content/themes/codeups-kadai/images/pc/overview-MV.jpg);
   }
 
 }

@@ -6,19 +6,19 @@
           <div class="swiper-slide">
             <div class="slide-img">
               <!-- <img class="u-mobile" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV1.jpg" alt="img1"> -->
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV1.jpg" alt="img1">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV4.jpg" alt="img1">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img">
               <!-- <img class="u-mobile" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV2.jpg" alt="img2"> -->
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV2.jpg" alt="img1">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV5.jpg" alt="img1">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img">
               <!-- <img class="u-mobile" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV3.jpg" alt="img3"> -->
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV3.jpg" alt="img1">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV6.jpg" alt="img1">
             </div>
           </div>
         </div>
@@ -27,19 +27,19 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="slide-img">
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV1.jpg" alt="img1">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV4.jpg" alt="img1">
               <!-- <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV1.jpg" alt="img1"> -->
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img">
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV2.jpg" alt="img2">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV5.jpg" alt="img2">
               <!-- <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV2.jpg" alt="img1"> -->
             </div>
           </div>
           <div class="swiper-slide">
             <div class="slide-img">
-              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV3.jpg" alt="img3">
+              <img class="" src="<?php echo get_template_directory_uri(); ?>/images/sp/sp-MV6.jpg" alt="img3">
               <!-- <img class="" src="<?php echo get_template_directory_uri(); ?>/images/pc/pc-MV3.jpg" alt="img1"> -->
             </div>
           </div>
@@ -49,8 +49,8 @@
       <div class="swiper-pagination"></div> -->
     </div>
     <div class="p-top-mainview__titlebox">
-      <h1 class="p-top-mainview__title">メインタイトルが入ります</h1>
-      <p class="p-top-mainview__subtitle">サブタイトルが入ります</p>
+      <h1 class="p-top-mainview__title">大切な人たちと、最高の時間</h1>
+      <p class="p-top-mainview__subtitle">あなたに最適のウェディングを。</p>
     </div>
   </div><!--/.top-mainview-->
   <div class="p-top-news p-news l-inner">
@@ -91,41 +91,41 @@
     <div class="p-top-content__header c-section__headers">
       <div class="l-inner">
         <div class="c-section-title__container">
-          <h2 class="c-section-title">事業内容</h2>
-          <span class="c-section-title__sub">Content</span>
+          <h2 class="c-section-title">サービス</h2>
+          <span class="c-section-title__sub">Service</span>
         </div>
       </div>
     </div><!--/.content__header-->
     <ul class="p-top-content__list">
       <li class="p-top-content__item p-top-content-unit">
-        <a href="#">
+        <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">
           <div class="p-top-content-unit__body">
             <div class="p-top-content-unit__img p-content__img1"></div>
-            <p>経営理念ページへ</p>
+            <p>挙式</p>
           </div>
         </a>
       </li>
       <li class="p-top-content__item p-top-content-unit">
-        <a href="#">
+        <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">
           <div class="p-top-content-unit__body">
             <div class="p-top-content-unit__img p-content__img2"></div>
-            <p>理念1へ</p>
+            <p>披露宴</p>
           </div>
         </a>
       </li>
       <li class="p-top-content__item p-top-content-unit">
-        <a href="#">
+        <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">
           <div class="p-top-content-unit__body">
             <div class="p-top-content-unit__img p-content__img3"></div>
-            <p>理念2へ</p>
+            <p>フォトサービス</p>
           </div>
         </a>
       </li>
       <li class="p-top-content__item p-top-content-unit">
-        <a href="#">
+        <a href="<?php echo esc_url( home_url( '/content' ) ); ?>">
           <div class="p-top-content-unit__body">
             <div class="p-top-content-unit__img p-content__img4"></div>
-            <p>理念3へ</p>
+            <p>２次会など</p>
           </div>
         </a>
       </li>
@@ -174,7 +174,7 @@
               私たちのホームパーティーにみんなを招待したようなものにしたかったので、
               まさに理想的な雰囲気で楽しく・とても賑やかで良かったです！  </p>
               <div class="c-util-link__container util-body__footer">
-                <a class="c-util-link" href="#">詳しく見る</a>
+                <a class="c-util-link" href="<?php echo esc_url( home_url( '/works' ) ); ?>">詳しく見る</a>
               </div>
             </div>
           </div><!--/.top-works__body-->
@@ -192,13 +192,13 @@
     <div class="p-top-overview__bg">
       <div class="p-top-overview__container">
         <div class="p-top-overview__img">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/overview.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/works8.jpg" alt="">
         </div><!--/.p-top-overview__img-->
         <div class="c-util-body p-top-overview__body">
           <h3 class="c-util-body__title">メインタイトルが入ります。</h3>
           <p class="c-util-body__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           <div class="c-util-link__container util-body__footer">
-            <a class="c-util-link" href="#">詳しく見る</a>
+            <a class="c-util-link" href="<?php echo esc_url( home_url( '/overview' ) ); ?>">詳しく見る</a>
           </div>
         </div><!--/.p-top-overview__body-->
       </div><!-- /.p-top-overview__container -->
@@ -213,53 +213,52 @@
           <span class="c-section-title__sub c-section-title__sub--right">Blog</span>
         </div>
       </div><!--/.blog__header-->
+      <?php
+        $args = array(
+          'post_type' => 'blog',
+          'posts_per_page' => '3',
+        );
+        $the_query = new WP_Query($args);
+      ?>
+      <?php if( $the_query -> have_posts() ): ?>
       <ul class="c-cards p-blog__items">
-        <li class="c-cards__item c-card">
-          <div class="c-card__is-new">
+        <?php while( $the_query -> have_posts()): $the_query -> the_post(); ?>
+        <li class="c-cards__item c-card p-top-blog__item">
+          <!-- <div class="c-card__is-new">
             <span class="">New</span>
           </div>
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog-1.jpg" alt=""></div>
+        .p-sub-blog__item:not(:first-child)-->
+          <a href="<?php the_permalink(); ?>" class="c-card__link">
+            <div class="c-card__header">
+              <?php
+                if (has_post_thumbnail() ) {
+                  // アイキャッチ画像が設定されてれば大サイズで表示
+                  the_post_thumbnail('large');
+                  } else {
+                  // なければnoimage画像をデフォルトで表示
+                  echo '<img src="' . esc_url(get_template_directory_uri()) . '/img/noimg.png" alt="">';
+                  }
+              ?>
+            </div>
             <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
+              <p class="c-card__title"><?php the_title(); ?></p>
+              <p class="c-card__text"><?php the_excerpt(); ?></p>
               <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
+                <span class="c-card__genre">
+                  <?php echo esc_html( get_the_terms( get_the_ID(), 'blog_category' )[0]->name ); ?>
+                </span>
+                <p class="c-card__date"><time datetime="<?php echo get_the_date('Y/m/d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time></p>
               </div>
             </div>
           </a>
         </li><!--/.c-card__item-->
-        <li class="c-cards__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog-2.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
-        <li class="c-cards__item c-card">
-          <a href="#" class="c-card__link">
-            <div class="c-card__header"><img src="<?php echo get_template_directory_uri(); ?>/images/common/blog-3.jpg" alt=""></div>
-            <div class="c-card__body">
-              <p class="c-card__title">タイトルが入ります。タイトルが入ります。</p>
-              <p class="c-card__text">説明文が入ります。説明文が入ります。説明文が入ります。</p>
-              <div class="c-card__footer">
-                <span class="c-card__genre">カテゴリ</span>
-                <p class="c-card__date"><time datetime="2020-07-20">2020.7.20</time></p>
-              </div>
-            </div>
-          </a>
-        </li><!--/.c-card__item-->
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
       </ul><!--/.c-card__list-->
+      <?php endif; ?>
       <div class="p-top-blog__footer">
         <div class="c-util-link__container">
-          <a class="c-util-link" href="#">詳しく見る</a>
+          <a class="c-util-link" href="<?php echo esc_url( home_url( '/blog' ) ); ?>">詳しく見る</a>
         </div>
       </div>
     </div><!--/.l-inner-->
