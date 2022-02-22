@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.l-news-item__header {
+  @include mq('md'){
+    width: 30%;
+  }
+}

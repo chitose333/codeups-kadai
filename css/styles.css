@@ -264,6 +264,12 @@ sp-nav
   }
 }
 
+@media screen and (min-width: 768px) {
+  .l-news-item__header {
+    width: 30%;
+  }
+}
+
 .l-pagination {
   margin-top: 80px;
   margin-top: 5rem;
@@ -381,7 +387,7 @@ sp-nav
   .c-bg-border2 {
     position: absolute;
     top: 157rem;
-    left: 44%;
+    left: 48%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     width: 0.0625rem;
@@ -1234,17 +1240,17 @@ pc-nav
 }
 
 .p-blog-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/sp/blog-MV.jpg);
+  background-image: url(../images/sp/blog-MV.jpg);
   background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .p-blog-mainview {
-    background-image: url(/wp-content/themes/codeups-kadai/images/pc/blog-MV.jpg);
+    background-image: url(../images/pc/blog-MV.jpg);
   }
 }
 
 .p-contact-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/common/contact-MV2.jpg);
+  background-image: url(../images/common/contact-MV2.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1523,13 +1529,13 @@ pc-nav
 # エラー表示
 ===========================================*/
 .p-content-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/sp/sp-MV6.jpg);
+  background-image: url(../images/sp/sp-MV6.jpg);
   background-size: cover;
   background-position: center;
 }
 @media screen and (min-width: 768px) {
   .p-content-mainview {
-    background-image: url(/wp-content/themes/codeups-kadai/images/pc/pc-MV6.jpg);
+    background-image: url(../images/pc/pc-MV6.jpg);
   }
 }
 
@@ -1538,19 +1544,19 @@ pc-nav
 }
 
 .p-content__img1 {
-  background-image: url(/wp-content/themes/codeups-kadai/images/pc/pc-MV5.jpg);
+  background-image: url(../images/pc/pc-MV5.jpg);
 }
 
 .p-content__img2 {
-  background-image: url(/wp-content/themes/codeups-kadai/images/pc/pc-MV4.jpg);
+  background-image: url(../images/pc/pc-MV4.jpg);
 }
 
 .p-content__img3 {
-  background-image: url(/wp-content/themes/codeups-kadai/images/content/content3.jpg);
+  background-image: url(../images/content/content3.jpg);
 }
 
 .p-content__img4 {
-  background-image: url(/wp-content/themes/codeups-kadai/images/pc/pc-MV6.jpg);
+  background-image: url(../images/pc/pc-MV6.jpg);
 }
 
 @media screen and (min-width: 768px) {
@@ -1762,6 +1768,7 @@ pc-nav
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    width: 7.5rem;
   }
 }
 
@@ -1790,7 +1797,7 @@ pc-nav
 }
 
 .p-news-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/common/news.jpg);
+  background-image: url(../images/common/news.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -1845,7 +1852,7 @@ pc-nav
 }
 
 .p-overview-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/common/overview.jpg);
+  background-image: url(../images/common/overview.jpg);
   background-size: cover;
 }
 .p-related__title {
@@ -3105,6 +3112,19 @@ pc-nav
   }
 }
 
+.p-top-works__img .swiper-slide img {
+  width: 100%;
+  height: 260px;
+  height: 16.25rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (min-width: 768px) {
+  .p-top-works__img .swiper-slide img {
+    height: 23.75rem;
+  }
+}
+
 .p-top-works__img .swiper-pagination-bullet {
   background-color: #fff;
   margin-left: 5px;
@@ -3152,13 +3172,13 @@ pc-nav
 }
 
 .p-works-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/works/sp/works-MV.jpg);
+  background-image: url(../images/works/sp/works-MV.jpg);
   background-size: cover;
   background-position: center;
 }
 @media screen and (min-width: 768px) {
   .p-works-mainview {
-    background-image: url(/wp-content/themes/codeups-kadai/images/works/pc/works-MV1.jpg);
+    background-image: url(../images/works/pc/works-MV1.jpg);
   }
 }
 

@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>CodeUps</title>
-  <meta name="description" content="descriptionです" />
-  <meta name="keywords" content="keywordsいれるよ" />
+  <title>コーポレートサイト</title>
+  <meta name="description" content="大切な人と、最高の時間。" />
+  <meta name="keywords" content="大切な人と、最高の時間。" />
   <!-- ogp -->
   <meta property="og:title" content="" />
   <meta property="og:type" content="" />
@@ -34,14 +34,14 @@
   <?php wp_body_open(); ?>
   <?php
     if( is_front_page() ) : ?>
-  <div class="c-bg-border"></div>
-  <div class="c-bg-border2"></div>
+    <div class="c-bg-border"></div>
+    <div class="c-bg-border2"></div>
   <?php endif; ?>
   <header class="l-header">
     <div class="l-header__inner">
       <div class="l-header__logo">
         <a class="logo__link" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header__logo.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/common/header-white.png" alt="ロゴ">
         </a>
       </div>
       <a id="MenuButton" href="#" class="sp-header__drawer c-hamburger js-drawer-open">

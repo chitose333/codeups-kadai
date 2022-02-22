@@ -1,12 +1,12 @@
 @use 'global' as *;
 
 .p-works-mainview  {
-  background-image: url(/wp-content/themes/codeups-kadai/images/works/sp/works-MV.jpg);
+  background-image: url(../images/works/sp/works-MV.jpg);
   background-size: cover;
   background-position: center;
 
   @include mq('md'){
-    background-image: url(/wp-content/themes/codeups-kadai/images/works/pc/works-MV1.jpg);
+    background-image: url(../images/works/pc/works-MV1.jpg);
   }
 
 }

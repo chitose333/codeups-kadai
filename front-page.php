@@ -54,9 +54,16 @@
     </div>
   </div><!--/.top-mainview-->
   <div class="p-top-news p-news l-inner">
-  <?php if ( have_posts() ) : ?>
+  <?php
+    $args = array(
+    'post_type' => 'post',
+    'posts_per_page' => '3',
+  );
+    $the_query = new WP_Query($args);
+  ?>
+  <?php if( $the_query -> have_posts() ): ?>
   <ul class="p-top-news__list">
-  <?php while ( have_posts() ) : the_post(); ?>
+    <?php while( $the_query -> have_posts()): $the_query -> the_post(); ?>
         <li class="p-top-news__item p-news-item">
           <div class="p-news-item__header">
             <p class="p-news-item__date"><time datetime="<?php echo get_the_date('Y/m/d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time></p>
@@ -78,6 +85,7 @@
         </li>
         <!-- /.news__item -->
         <?php endwhile;?>
+        <?php wp_reset_postdata(); ?>
       </ul><!-- /.news__list -->
       <?php endif; ?>
       <div class="p-top-news__footer">
@@ -143,26 +151,25 @@
     <div class="p-top-works__bg">
       <div class="p-top-works__container">
           <div class="p-top-works__img">
-            <!-- <img src="<?php echo get_template_directory_uri(); ?>/images/common/works-test.jpg" alt=""> -->
             <!-- Swiper START -->
             <div class="swiper-container">
+              <?php
+                $args = array(
+                'post_type' => 'works',
+                'posts_per_page' => '3',
+              );
+                $the_query = new WP_Query($args);
+              ?>
+              <?php if( $the_query -> have_posts() ): ?>
               <div class="swiper-wrapper">
+                <?php while( $the_query -> have_posts()): $the_query -> the_post(); ?>
                 <div class="swiper-slide">
-                  <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works2.jpg" alt="works1">
-                  </div>
+                  <?php the_post_thumbnail('large'); ?>
                 </div>
-                <div class="swiper-slide">
-                  <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works4.jpg" alt="">
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="works__slide-img">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/works-detail/works7.jpg" alt="">
-                  </div>
-                </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
               </div>
+              <?php endif; ?>
             </div>
             <div class="swiper-pagination"></div>
             <!-- Swiper END -->
@@ -195,8 +202,8 @@
           <img src="<?php echo get_template_directory_uri(); ?>/images/common/works8.jpg" alt="">
         </div><!--/.p-top-overview__img-->
         <div class="c-util-body p-top-overview__body">
-          <h3 class="c-util-body__title">メインタイトルが入ります。</h3>
-          <p class="c-util-body__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          <h3 class="c-util-body__title">大切な人と、最高の時間。</h3>
+          <p class="c-util-body__text">当社では「大切な人と最高の時間」を過ごしてほしいとの思いから、あなたに最適なウェディングをご提案させていただきます。</p>
           <div class="c-util-link__container util-body__footer">
             <a class="c-util-link" href="<?php echo esc_url( home_url( '/overview' ) ); ?>">詳しく見る</a>
           </div>

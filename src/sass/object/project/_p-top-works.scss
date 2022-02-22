@@ -34,6 +34,16 @@
   }
 }
 
+.p-top-works__img .swiper-slide img {
+  width: 100%;
+  height: rem(260);
+  object-fit: cover;
+
+  @include mq('md'){
+    // width: 50%;
+    height: rem(380);
+  }
+}
 //worksのswiperカスタマイズ
 // .works__img .swiper-container {
 //   padding-bottom: rem(30);

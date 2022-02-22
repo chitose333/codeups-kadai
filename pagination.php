@@ -44,6 +44,8 @@
       <div class="c-pagination__btn c-page-btn is-now">
         <?php if(get_post_type() === 'post'):  ?>
           <a href="<?php echo esc_url( home_url( '/news' ) ); ?>">一覧</a>
+          <?php if(get_post_type() === 'works'):  ?>
+            <a href="<?php echo esc_url( home_url( '/works' ) ); ?>">一覧</a>
         <?php else: ?>
           <a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">一覧</a>
         <?php endif; ?>

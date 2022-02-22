@@ -49,10 +49,10 @@ function change_set_post($query){
   if(is_admin() || !$query->is_main_query()){
     return;
   }
-  if($query->is_front_page()) {
-    $query->set('posts_per_page','3');
-    return;
-  }
+  // if($query->is_front_page()) {
+  //   $query->set('posts_per_page','3');
+  //   return;
+  // }
   if($query->is_post_type_archive('blog') || is_tax(['blog_category', 'blog_tag'])) {
     $query->set('posts_per_page','6');
     return;
@@ -62,15 +62,15 @@ add_action('pre_get_posts', 'change_set_post');
 
 
 // 投稿のアーカイブページを作成する
-function post_has_archive($args, $post_type)
-{
-    if ('post' == $post_type) {
-        $args['rewrite'] = true; // リライトを有効にする
-        $args['has_archive'] = 'news'; // 任意のスラッグ名
-    }
-    return $args;
-}
-add_filter('register_post_type_args', 'post_has_archive', 10, 2);
+// function post_has_archive($args, $post_type)
+// {
+//     if ('post' == $post_type) {
+//         $args['rewrite'] = true; // リライトを有効にする
+//         $args['has_archive'] = 'news'; // 任意のスラッグ名
+//     }
+//     return $args;
+// }
+// add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 
 /**
  * アイキャッチ画像に対応する

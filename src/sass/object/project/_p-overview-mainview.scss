@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .p-overview-mainview {
-  background-image: url(/wp-content/themes/codeups-kadai/images/common/overview.jpg);
+  background-image: url(../images/common/overview.jpg);
   background-size: cover;
 
   @include mq('md'){
