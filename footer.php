@@ -70,9 +70,9 @@
     </div>
   </footer>
   <div class="c-pagetop">
-    <!-- <a href="#" class="pagetop__link"> -->
+    <a href="#" class="pagetop__link">
       <div class="c-pagetop__icon"></div>
-    <!-- </a> -->
+    </a>
   </div>
   <?php wp_footer(); ?>
 </body>
