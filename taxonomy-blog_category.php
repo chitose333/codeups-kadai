@@ -7,13 +7,25 @@
       <p><?php bcn_display( ); ?></p>
     </div><!--/.l-breadcrumb-->
     <div class="p-sub-blog__category c-category">
-      <a class="c-category__btn is-active" href="<?php echo esc_url( home_url( '/blog' ) ); ?>">ALL</a>
+      <?php if(get_queried_object_id()): ?><!--現在のタームが空じゃなかったら、ALLは変色しない-->
+      <a class="c-category__btn" href="<?php echo esc_url( home_url( '/blog' ) ); ?>">ALL</a>
+      <?php else: ?><!--現在のタームが空だったら、ALLは変色する-->
+        <a class="c-category__btn is-active" href="<?php echo esc_url( home_url( '/blog' ) ); ?>">ALL</a>
+      <?php endif; ?>
       <?php
-        $genre_terms = get_terms( 'blog_category', array( 'hide_empty' => false ) );
+        $genre_terms = get_terms( 'blog_category', array( 'hide_empty' => true ) );
         foreach ( $genre_terms as $genre_term ) :
       ?>
-
-      <a class="c-category__btn" href="<?php echo esc_url( get_term_link( $genre_term, 'genre' ) ); ?>"><?php echo esc_html( $genre_term->name ); ?></a>
+        <?php if($genre_term->term_id == get_queried_object_id()): ?>
+          <!--foreachで取得してきたタームと現在のタームのIDが一致したら、変色-->
+          <a class="c-category__btn is-active" href="<?php echo esc_url( get_term_link( $genre_term, 'genre' ) ); ?>">
+          <?php echo esc_html( $genre_term->name ); ?>
+          </a>
+        <?php else: ?><!--foreachで取得してきたタームと現在のタームのIDが一致しなかったら-->
+            <a class="c-category__btn" href="<?php echo esc_url( get_term_link( $genre_term, 'genre' ) ); ?>">
+        <?php echo esc_html( $genre_term->name ); ?>
+        </a>
+        <?php endif; ?>
       <?php
         endforeach;
       ?>

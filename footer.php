@@ -8,15 +8,14 @@
         <ul class="p-footer__menu__items">
           <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">トップ</a></li>
           <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a></li>
-          <li class="p-footer__menu__item"><a href="/content">事業内容</a></li>
-          <li class="p-footer__menu__item"><a href="overview">企業概要</a></li>
-          <li class="p-footer__menu__item"><a href="#">ブログ</a></li>
-          <li class="p-footer__menu__item p-footer__menu__item--p-top-contact"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a></li>
+          <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a></li>
+          <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a></li>
+          <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">ブログ</a></li>
         </ul>
       </nav>
     </div><!--/.p-footer__container-->
     <div class="p-footer__copyright">
-      <p> &copy; 2022 Smart Mobile</p>
+      <p> &copy; 2022 C-links Inc.</p>
     </div>
   </footer>
   <div class="c-pagetop">
@@ -40,7 +39,7 @@
         </div>
       </div><!--/.p-top-contact__header-->
       <div class="p-contact__body">
-        <p class="p-contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+        <p class="p-contact__text">いつでも挙式場や披露宴会場のご見学ができます。<br>お気軽にご連絡くださいませ。</p>
       </div>
       <div class="p-contact__footer">
         <div class="c-util-link__container">
@@ -60,13 +59,13 @@
           <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/news' ) ); ?>">お知らせ</a></li>
           <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/content' ) ); ?>">事業内容</a></li>
           <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/overview' ) ); ?>">企業概要</a></li>
-          <li class="p-footer__menu__item"><a href="#">ブログ</a></li>
+          <li class="p-footer__menu__item"><a href="<?php echo esc_url( home_url( '/blog' ) ); ?>">ブログ</a></li>
           <li class="p-footer__menu__item p-footer__menu__item--p-top-contact"><a href="<?php echo esc_url( home_url( '/contact' ) ); ?>">お問い合わせ</a></li>
         </ul>
       </nav>
     </div><!--/.p-footer__container-->
     <div class="p-footer__copyright">
-      <p> &copy; 2021 CodeUps Inc.</p>
+      <p> &copy; 2022 C-links Inc.</p>
     </div>
   </footer>
   <div class="c-pagetop">

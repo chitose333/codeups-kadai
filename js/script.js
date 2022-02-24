@@ -112,4 +112,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   thumbs.controller.control = slider;
   slider.controller.control = thumbs;
 
+  // $(function() {
+
+  //   var url = window.location.pathname;
+  //   var catUrl = url.substring(url.lastIndexOf('/')+1);
+
+  //   $('.c-category__btn').each(function() {
+  //     var obj = $(this);
+  //     var link = obj.attr("href");
+  //     var catLink = link.substring(link.lastIndexOf('/')+1);
+
+  //     if( catUrl === catLink ){
+  //       obj.addClass('is-active');
+  //     }
+
+  //   });
+
+  // });
+
 });

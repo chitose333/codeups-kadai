@@ -1,4 +1,4 @@
-<?php if( is_archive() ) : ?>
+<?php if( is_archive() || is_home() ) : ?>
   <div class="c-pagination l-pagination">
     <div class="c-pagination__container">
     <?php the_posts_pagination(
